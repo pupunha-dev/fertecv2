@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Backgrounds */
+  --bg-void: #0a0a0a;
+  --bg-deep: #111111;
+  --bg-surface: #1a1a1a;
+  --bg-edge: #222222;
+
+  /* Brand */
+  --orange: #e8600a;
+  --orange-dim: #b84d08;
+  --orange-glow: rgba(232, 96, 10, 0.15);
+
+  /* Texto */
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --text-muted: #555555;
+  --text-accent: #e8600a;
+
+  /* Utilitarios */
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-active: rgba(232, 96, 10, 0.4);
+  --line-rule: rgba(255, 255, 255, 0.08);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-bg-void: var(--bg-void);
+  --color-bg-deep: var(--bg-deep);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-edge: var(--bg-edge);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-orange: var(--orange);
+  --color-orange-dim: var(--orange-dim);
+  --color-orange-glow: var(--orange-glow);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-accent: var(--text-accent);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-active: var(--border-active);
+  --color-line-rule: var(--line-rule);
+
+  --font-display: var(--font-barlow-condensed);
+  --font-label: var(--font-barlow);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
