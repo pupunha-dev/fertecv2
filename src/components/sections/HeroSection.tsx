@@ -8,10 +8,11 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 const INDICATORS = [
-  "Reengenharia de componentes industriais críticos",
-  "Soluções para obsolescência industrial",
-  "Redução de paradas não planejadas",
-  "Confiabilidade operacional mensurável",
+  "Obsolescência Industrial",
+  "Reengenharia de Componentes Críticos",
+  "Dispositivos Mecânicos Especiais",
+  "Moldes e Ferramentais Industriais",
+  "Manufatura Técnica"
 ];
 
 export default function HeroSection() {
@@ -21,7 +22,7 @@ export default function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden bg-bg-void pt-[15vh] pb-24">
       <Image
-        src="/images/hero/industrial-img.png"
+        src="/images/hero/hero-home.png"
         alt="Componente mecânico industrial em processo de reengenharia"
         fill
         priority
@@ -42,30 +43,25 @@ export default function HeroSection() {
         variants={staggerContainer}
         className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col gap-12 px-[clamp(1.5rem,5vw,4rem)] lg:grid lg:grid-cols-[1fr_auto] lg:items-end"
       >
-        <div className="flex max-w-2xl flex-col gap-6">
+        <div className="flex max-w-3xl flex-col gap-6">
           <motion.div variants={fadeInUp}>
             <Eyebrow>Engenharia Aplicada à Confiabilidade Operacional</Eyebrow>
           </motion.div>
 
           <motion.h1
             variants={fadeInUp}
-            className="font-display text-[clamp(2.5rem,4vw+2rem,7rem)] font-extrabold uppercase leading-[0.95] text-text-primary"
+            className="font-display text-6xl font-extrabold uppercase leading-[0.95] text-text-primary"
+          // text-[clamp(2.5rem,4vw+2rem,7rem)]
           >
-            Quando a falha
-            <br />
-            se torna
-            <br />
-            recorrente.
+            ENGENHARIA MECÂNICA, FERRAMENTARIA E MANUFATURA TÉCNICA PARA NECESSIDADES INDUSTRIAIS CRÍTICAS.
           </motion.h1>
 
           <motion.p
             variants={fadeInUp}
             className="max-w-[560px] font-sans text-base text-text-secondary sm:text-lg"
           >
-            Falhas que se repetem não são fatalidade operacional — são o
-            sintoma de um problema de engenharia ainda não resolvido. A Fertec
-            atua na causa: reengenharia de componentes críticos para restaurar
-            estabilidade, previsibilidade e confiabilidade na operação.
+            A Fertec integra engenharia mecânica, experiência em ferramentaria e capacidade de manufatura para desenvolver, recuperar e executar componentes, dispositivos e ferramentais industriais.
+
           </motion.p>
 
           <motion.ul variants={fadeInUp} className="flex flex-col gap-3">
@@ -87,13 +83,13 @@ export default function HeroSection() {
             <Button href="/contato" variant="primary">
               Solicitar Avaliação Técnica
             </Button>
-            <Button href="/quem-somos" variant="ghost">
+            {/* <Button href="/quem-somos" variant="ghost">
               Conhecer a Fertec
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           variants={fadeInUp}
           className="hidden max-w-xs border-l-[3px] border-orange pl-6 lg:block"
         >
@@ -101,7 +97,7 @@ export default function HeroSection() {
             &ldquo;Não substituímos componentes. Restauramos estabilidade e
             confiabilidade operacional.&rdquo;
           </p>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </section>
   );

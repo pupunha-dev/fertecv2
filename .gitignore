@@ -37,6 +37,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# assets
+/Fotos-20260908T113005Z-1-001
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

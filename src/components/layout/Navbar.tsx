@@ -34,11 +34,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        isScrolled
-          ? "border-b border-border-subtle bg-bg-deep/80 backdrop-blur-md"
-          : "bg-transparent"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${isScrolled
+        ? "border-b border-border-subtle bg-bg-deep/80 backdrop-blur-md"
+        : "bg-transparent"
+        }`}
     >
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-[clamp(1.5rem,5vw,4rem)] py-5">
         <Link href="/" className="relative flex items-center gap-3">
@@ -67,7 +66,7 @@ export default function Navbar() {
               left: 0,
               transition: "opacity 0.3s",
             }}
-            // className={isScrolled ? "opacity-100" : "opacity-0"}
+          // className={isScrolled ? "opacity-100" : "opacity-0"}
           />
           <span className="font-display text-xl font-extrabold uppercase tracking-wide text-text-primary">
             FERTEC
@@ -110,15 +109,13 @@ export default function Navbar() {
       <div
         aria-hidden={!isMenuOpen}
         onClick={() => setIsMenuOpen(false)}
-        className={`fixed inset-0 z-40 bg-bg-void/80 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
-          isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
-        }`}
+        className={`fixed inset-0 z-40 bg-bg-void/80 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
+          }`}
       />
 
       <div
-        className={`fixed inset-y-0 right-0 z-50 flex w-full max-w-xs flex-col gap-8 border-l border-border-subtle bg-bg-deep px-8 py-8 transition-transform duration-300 lg:hidden ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-y-0 right-0 z-50 flex w-full max-w-xs flex-col gap-8 border-l border-border-subtle bg-bg-deep px-8 py-8 transition-transform duration-300 lg:hidden ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">

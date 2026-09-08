@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <HeroSection />
       <PainPointsSection />
-      <EngineeringSection />
+      {/* <EngineeringSection /> */}
       <ProcessFlowSection />
       <CapabilitiesSection />
       <ResultsSection />

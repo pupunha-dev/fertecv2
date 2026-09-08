@@ -27,11 +27,11 @@ export default function EngineeringSection() {
       >
         <div className="flex flex-col gap-6">
           <motion.div variants={fadeInUp}>
-            <Eyebrow>Engenharia Aplicada à Operação</Eyebrow>
+            <Eyebrow>Processo</Eyebrow>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <SectionTitle as="h2">Engenharia aplicada à operação</SectionTitle>
+            <SectionTitle as="h2">MÉTODO FERTEC</SectionTitle>
           </motion.div>
 
           <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">

@@ -18,37 +18,25 @@ const PAIN_POINTS = [
     icon: ArchiveBoxXMarkIcon,
     title: "Obsolescência industrial",
     description:
-      "Componentes descontinuados pelo fabricante original comprometem a continuidade operacional e a manutenção de equipamentos críticos.",
+      "Desenvolvimento de alternativas para componentes descontinuados, indisponíveis ou com fornecimento restrito ao fabricante original.",
   },
   {
     icon: GlobeAltIcon,
-    title: "Dependência de OEM internacional",
+    title: "Reengenharia de componentes críticos",
     description:
-      "Prazos longos, custos elevados e indisponibilidade de peças importadas expõem a operação a riscos desnecessários.",
-  },
-  {
-    icon: ArrowPathIcon,
-    title: "Falhas recorrentes",
-    description:
-      "Quando a mesma falha volta a ocorrer após reparo, o problema não está na peça — está na engenharia que não foi revisada.",
-  },
-  {
-    icon: ExclamationTriangleIcon,
-    title: "Instabilidade operacional",
-    description:
-      "Variações de desempenho e paradas não planejadas indicam um comportamento mecânico que precisa ser caracterizado e corrigido.",
+      "Análise e revisão de componentes sujeitos a falhas recorrentes, desgaste ou vida útil insuficiente, considerando materiais, tratamentos térmicos, geometria, tolerâncias e demais características que influenciam seu desempenho.",
   },
   {
     icon: Cog6ToothIcon,
     title: "Dispositivos mecânicos especiais",
     description:
-      "Aplicações fora do padrão exigem dispositivos projetados sob medida para a real condição de operação da planta.",
+      "Desenvolvimento de dispositivos para metrologia, inspeção, controle dimensional, montagem, posicionamento e aplicações industriais específicas",
   },
   {
     icon: CubeIcon,
-    title: "Componentes críticos para moldes industriais",
+    title: "Manufatura técnica",
     description:
-      "Elementos de moldes sujeitos a desgaste e fadiga exigem reengenharia para garantir vida útil e repetibilidade dimensional.",
+      "Fabricação, recuperação, ajustagem, montagem e controle dimensional de componentes, dispositivos e ferramentais conforme os requisitos de cada aplicação.",
   },
 ];
 
@@ -58,7 +46,7 @@ export default function PainPointsSection() {
       <div className="mx-auto max-w-[1280px]">
         <Eyebrow>Desafios da Operação</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
-          Onde a engenharia se torna necessária
+          Especialidades
         </SectionTitle>
 
         <motion.div

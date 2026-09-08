@@ -6,37 +6,32 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Eyebrow from "@/components/ui/Eyebrow";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
+import Button from "../ui/Button";
 
 const STEPS = [
   {
     number: "01",
-    title: "Caracterização do modo de falha",
+    title: "Compreender",
     description:
-      "Análise técnica da falha, do histórico operacional e das condições reais de trabalho do componente.",
+      "Desenhos · Amostras · Histórico · Função · Interfaces · Requisitos · Condições de operação",
   },
   {
     number: "02",
-    title: "Reengenharia aplicada ao componente",
+    title: "Desenvolver",
     description:
-      "Revisão de geometria, material e tolerâncias a partir da causa raiz identificada — antes de qualquer fabricação.",
+      "Materiais · Tratamentos térmicos · Geometria · Tolerâncias · Ajustes · Requisitos funcionais",
   },
   {
     number: "03",
-    title: "Melhoria funcional e estrutural",
+    title: "Executar",
     description:
-      "Ajustes de projeto voltados a aumentar a vida útil e a estabilidade do componente em operação.",
+      "Manufatura técnica · Recuperação · Ajustagem · Montagem · Controle dimensional",
   },
   {
     number: "04",
-    title: "Manufatura técnica controlada",
+    title: "Validar",
     description:
-      "Execução do componente reengenheirado com controle dimensional e processos adequados à aplicação.",
-  },
-  {
-    number: "05",
-    title: "Resultado aplicado à operação",
-    description:
-      "Componente entregue em condição de operar com confiabilidade mensurável e comportamento previsível.",
+      "Conformidade · Função · Comportamento em operação",
   },
 ];
 
@@ -46,9 +41,9 @@ export default function ProcessFlowSection() {
   return (
     <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
       <div className="mx-auto max-w-[1280px]">
-        <Eyebrow>Como Transformamos Falhas em Confiabilidade</Eyebrow>
+        <Eyebrow>PROCESSOS</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
-          Fluxo de processo
+          MÉTODO FERTEC
         </SectionTitle>
 
         {/* Desktop: horizontal steps with connecting line */}
@@ -94,9 +89,8 @@ export default function ProcessFlowSection() {
                     </span>
                   </span>
                   <ChevronDownIcon
-                    className={`h-5 w-5 shrink-0 text-text-secondary transition-transform duration-200 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
+                    className={`h-5 w-5 shrink-0 text-text-secondary transition-transform duration-200 ${isOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 <AnimatePresence initial={false}>
@@ -118,7 +112,17 @@ export default function ProcessFlowSection() {
             );
           })}
         </div>
+
+        <motion.div
+          variants={fadeInUp}
+          className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-8"
+        >
+          <Button href="/contato" variant="primary">
+            CONHEÇA NOSSO PROCESSO
+          </Button>
+        </motion.div>
       </div>
+
     </section>
   );
 }
