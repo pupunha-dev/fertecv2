@@ -7,12 +7,12 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 const CHAT_BENEFITS = [
-  {
-    icon: BoltIcon,
-    title: "Resposta imediata",
-    description:
-      "Nosso assistente de IA está disponível a qualquer momento para receber sua demanda técnica e direcionar ao especialista certo.",
-  },
+  // {
+  //   icon: BoltIcon,
+  //   title: "Resposta imediata",
+  //   description:
+  //     "Nosso assistente de IA está disponível a qualquer momento para receber sua demanda técnica e direcionar ao especialista certo.",
+  // },
   {
     icon: ChatBubbleLeftRightIcon,
     title: "Atendimento inteligente",
@@ -41,9 +41,10 @@ export default function ContactSection() {
           <Eyebrow>Como funciona</Eyebrow>
           <SectionTitle as="h2">Contato direto com a engenharia</SectionTitle>
           <p className="max-w-2xl font-sans text-base text-text-secondary sm:text-lg">
-            O atendimento da Fertec é realizado pelo chat integrado nesta página —
-            de forma eficiente, inteligente e sem intermediários. Clique no ícone
-            no canto inferior da tela para iniciar.
+            Nem todo desenvolvimento começa com todas as definições estabelecidas.
+          </p>
+          <p className="max-w-2xl font-sans text-base text-text-secondary sm:text-lg">
+            Desenhos, amostras físicas, histórico operacional e demais informações disponíveis podem ser suficientes para iniciar uma avaliação. A partir dessas informações, a Fertec busca compreender a necessidade e definir os próximos passos.
           </p>
         </motion.div>
 
@@ -73,10 +74,10 @@ export default function ContactSection() {
           <p className="font-sans text-sm text-text-secondary">
             <span className="text-text-primary">E-mail:</span>{" "}
             <a
-              href="mailto:contato@fertec.com.br"
+              href="mailto:comercial@fertec.com.br"
               className="transition-colors hover:text-orange"
             >
-              contato@fertec.com.br
+              comercial@fertec.com.br
             </a>
           </p>
           <p className="font-sans text-sm text-text-secondary">

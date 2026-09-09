@@ -41,7 +41,7 @@ export default function CaseHeroSection({ technicalCase }: CaseHeroSectionProps)
       >
         <motion.div variants={fadeInUp}>
           <Link
-            href="/cases"
+            href="/nossa-conviccao"
             className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary transition-colors hover:text-orange"
           >
             ← Biblioteca Técnica

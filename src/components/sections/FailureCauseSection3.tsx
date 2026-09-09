@@ -20,7 +20,8 @@ export default function FailureCauseSection() {
             <Eyebrow>Especialidades</Eyebrow>
           </motion.div>
           <motion.div variants={fadeInUp}>
-            <SectionTitle as="h2">OBSOLESCÊNCIA INDUSTRIAL</SectionTitle>
+            <SectionTitle as="h2">DISPOSITIVOS MECÂNICOS ESPECIAIS
+            </SectionTitle>
           </motion.div>
         </div>
 
@@ -29,22 +30,21 @@ export default function FailureCauseSection() {
             variants={fadeInUp}
             className="font-sans text-lg leading-relaxed text-text-primary sm:text-xl"
           >
-            COMPONENTES OBSOLETOS NÃO PRECISAM DETERMINAR A SUBSTITUIÇÃO DE ATIVOS QUE AINDA GERAM VALOR À OPERAÇÃO.
+            REFERÊNCIAS MECÂNICAS PARA INSPEÇÃO, CONTROLE, POSICIONAMENTO E MONTAGEM.
+
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            A indisponibilidade de componentes pode tornar ativos ainda produtivos dependentes do fabricante original, de estoques remanescentes ou de fontes de fornecimento cada vez mais restritas.
+            Dispositivos mecânicos estabelecem referências, apoios e condições de posicionamento necessárias às operações de metrologia, inspeção, controle dimensional e montagem.
+
+
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            A Fertec reconstrói as informações necessárias para desenvolver alternativas compatíveis com a função e as características do equipamento.
-          </motion.p>
-
-          <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            Geometria, materiais, propriedades, tolerâncias e requisitos funcionais são definidos de acordo com a necessidade do projeto. Essas informações formam uma base técnica para fabricação, documentação e futuras intervenções.
-            Essa capacidade amplia a autonomia sobre componentes críticos e contribui para manter em operação ativos que continuam relevantes para o processo produtivo.
+            O desenvolvimento considera apoio, localização, fixação, estabilidade, acessibilidade e demais características necessárias ao uso do dispositivo.
 
           </motion.p>
+
         </div>
       </motion.div>
     </section>

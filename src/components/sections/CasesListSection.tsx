@@ -19,7 +19,7 @@ export default function CasesListSection() {
         {CASES.map((technicalCase) => (
           <motion.div key={technicalCase.slug} variants={fadeInUp}>
             <Link
-              href={`/cases/${technicalCase.slug}`}
+              href={`/nossa-conviccao/${technicalCase.slug}`}
               className="group flex h-full flex-col border border-border-subtle bg-bg-deep transition-colors duration-200 hover:border-border-active"
             >
               <div className="relative aspect-[16/9] w-full overflow-hidden">
@@ -38,32 +38,30 @@ export default function CasesListSection() {
               </div>
 
               <div className="flex flex-1 flex-col gap-4 p-6">
-                <span className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-orange">
-                  {technicalCase.setor}
-                </span>
 
                 <h3 className="font-display text-xl font-bold uppercase leading-snug text-text-primary sm:text-2xl">
                   {technicalCase.titulo}
                 </h3>
 
-                <div className="flex flex-col gap-3 border-t border-line-rule pt-4">
+                <div className="flex flex-col gap-3 border-t border-line-rule">
                   <div>
-                    <p className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary">
-                      Problema
-                    </p>
                     <p className="mt-1 font-sans text-sm text-text-secondary">
                       {technicalCase.resumoProblema}
                     </p>
                   </div>
                   <div>
-                    <p className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary">
+                    {/* <p className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary">
                       Resultado
-                    </p>
+                    </p> */}
                     <p className="mt-1 font-sans text-sm text-text-secondary">
                       {technicalCase.resumoResultado}
                     </p>
                   </div>
                 </div>
+
+                <span className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-orange">
+                  <p>Clique para ver conteúdo completo</p>
+                </span>
               </div>
             </Link>
           </motion.div>

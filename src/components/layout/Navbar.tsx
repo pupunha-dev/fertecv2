@@ -7,10 +7,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Button from "@/components/ui/Button";
 
 const NAV_LINKS = [
-  { href: "/engenharia-aplicada", label: "Engenharia Aplicada" },
-  { href: "/capacidades", label: "Capacidades" },
-  { href: "/cases", label: "Cases Técnicos" },
-  { href: "/quem-somos", label: "Quem Somos" },
+  { href: "/especialidades", label: "Especialidades" },
+  { href: "/metodo-fertec", label: "Método Fertec" },
+  { href: "/nossa-conviccao", label: "Nossa Convicção" },
+  { href: "/projetos", label: "Projetos" },
   { href: "/contato", label: "Contato" },
 ];
 

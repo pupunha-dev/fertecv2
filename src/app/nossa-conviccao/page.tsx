@@ -13,16 +13,19 @@ export default function CasesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Biblioteca Técnica"
-        title="Cases Técnicos"
-        subtitle="Registro técnico de falhas características, suas causas e a engenharia aplicada para restaurar estabilidade operacional."
-        imageSrc="/images/pages/indimg4.png"
+        eyebrow="Nossa Visão de Engenharia"
+        title="A ENGENHARIA CRIA VALOR QUANDO COMPREENDE A NECESSIDADE ANTES DE DEFINIR A ALTERNATIVA."
+        subtitle="Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido.
+É essa compreensão que orienta as decisões de engenharia.
+"
+        imageSrc="/images/pages/NOSSA VISÃO DE ENGENHARIA.png"
         imageAlt="Biblioteca técnica de cases de engenharia aplicada"
       />
       <CasesListSection />
       <ClosingCTASection
         eyebrow="Avaliação Técnica"
         title="Tem uma falha recorrente que ainda não foi caracterizada?"
+        text=""
       />
     </>
   );

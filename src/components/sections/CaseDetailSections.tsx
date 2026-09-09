@@ -14,13 +14,13 @@ const SECTIONS: Array<{
   label: string;
   field: keyof TechnicalCase;
 }> = [
-  { step: "01", label: "Problema Operacional", field: "problemaOperacional" },
-  { step: "02", label: "Condição da Aplicação", field: "condicaoAplicacao" },
-  { step: "03", label: "Caracterização da Falha", field: "caracterizacaoFalha" },
-  { step: "04", label: "Reengenharia Aplicada", field: "reengenhariaAplicada" },
-  { step: "05", label: "Solução Implementada", field: "solucaoImplementada" },
-  { step: "06", label: "Resultado Operacional", field: "resultadoOperacional" },
-];
+    { step: "01", label: "DESAFIO", field: "problemaOperacional" },
+    { step: "02", label: "ANÁLISE TÉCNICA", field: "condicaoAplicacao" },
+    { step: "03", label: "DESENVOLVIMENTO", field: "caracterizacaoFalha" },
+    { step: "04", label: "EXECUÇÃO", field: "reengenhariaAplicada" },
+    { step: "05", label: "RESULTADO", field: "solucaoImplementada" },
+    { step: "06", label: "COMPETÊNCIAS APLICADAS", field: "resultadoOperacional" },
+  ];
 
 export default function CaseDetailSections({ technicalCase }: CaseDetailSectionsProps) {
   return (

@@ -24,9 +24,7 @@ export default function ContactHeroSection() {
           variants={fadeInUp}
           className="font-display text-[clamp(2rem,5vw,4rem)] font-extrabold uppercase leading-tight text-text-primary"
         >
-          Quando a recorrência da falha começa a comprometer produtividade,
-          disponibilidade e estabilidade operacional, a engenharia aplicada
-          deixa de ser opcional.
+          NOVAS POSSIBILIDADES COMEÇAM PELA COMPREENSÃO DE UMA NECESSIDADE TÉCNICA.
         </motion.h1>
       </motion.div>
     </section>

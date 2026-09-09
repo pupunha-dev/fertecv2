@@ -117,7 +117,7 @@ export default function ProcessFlowSection() {
           variants={fadeInUp}
           className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-8"
         >
-          <Button href="/contato" variant="primary">
+          <Button href="/metodo-fertec" variant="primary">
             CONHEÇA NOSSO PROCESSO
           </Button>
         </motion.div>

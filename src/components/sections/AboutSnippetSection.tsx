@@ -58,7 +58,7 @@ export default function AboutSnippetSection() {
           </motion.p>
 
           <motion.div variants={fadeInUp}>
-            <Button href="/quem-somos" variant="ghost" className="px-0">
+            <Button href="/projetos" variant="ghost" className="px-0">
               Conhecer a Fertec →
             </Button>
           </motion.div>

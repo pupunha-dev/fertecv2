@@ -20,7 +20,9 @@ export default function FailureCauseSection() {
             <Eyebrow>Especialidades</Eyebrow>
           </motion.div>
           <motion.div variants={fadeInUp}>
-            <SectionTitle as="h2">OBSOLESCÊNCIA INDUSTRIAL</SectionTitle>
+            <SectionTitle as="h2">MOLDES E FERRAMENTAIS INDUSTRIAIS
+
+            </SectionTitle>
           </motion.div>
         </div>
 
@@ -29,21 +31,20 @@ export default function FailureCauseSection() {
             variants={fadeInUp}
             className="font-sans text-lg leading-relaxed text-text-primary sm:text-xl"
           >
-            COMPONENTES OBSOLETOS NÃO PRECISAM DETERMINAR A SUBSTITUIÇÃO DE ATIVOS QUE AINDA GERAM VALOR À OPERAÇÃO.
+            PRESERVAR MOLDES E FERRAMENTAIS É PRESERVAR CAPACIDADE PRODUTIVA JÁ INSTALADA.
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            A indisponibilidade de componentes pode tornar ativos ainda produtivos dependentes do fabricante original, de estoques remanescentes ou de fontes de fornecimento cada vez mais restritas.
+            Referências geométricas, ajustes, superfícies funcionais e componentes trabalham em conjunto e determinam o funcionamento do ferramental.
+
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            A Fertec reconstrói as informações necessárias para desenvolver alternativas compatíveis com a função e as características do equipamento.
+            Desgaste, danos, obsolescência ou novas exigências de processo não determinam necessariamente sua substituição integral. A Fertec atua na manutenção, recuperação e modernização de moldes e ferramentais, além do desenvolvimento e da reengenharia de componentes críticos.
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            Geometria, materiais, propriedades, tolerâncias e requisitos funcionais são definidos de acordo com a necessidade do projeto. Essas informações formam uma base técnica para fabricação, documentação e futuras intervenções.
-            Essa capacidade amplia a autonomia sobre componentes críticos e contribui para manter em operação ativos que continuam relevantes para o processo produtivo.
-
+            A intervenção pode restabelecer referências, ajustes e superfícies funcionais ou adaptar o ferramental a novas necessidades, preservando o que continua tecnicamente adequado.
           </motion.p>
         </div>
       </motion.div>

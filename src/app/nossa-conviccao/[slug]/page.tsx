@@ -44,6 +44,7 @@ export default async function CasePage({ params }: CasePageProps) {
       <ClosingCTASection
         eyebrow="Avaliação Técnica"
         title="Tem um componente com falha semelhante na sua operação?"
+        text=""
       />
     </>
   );

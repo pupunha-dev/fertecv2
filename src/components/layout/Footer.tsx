@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { href: "/engenharia-aplicada", label: "Engenharia Aplicada" },
-  { href: "/capacidades", label: "Capacidades" },
-  { href: "/cases", label: "Cases Técnicos" },
-  { href: "/quem-somos", label: "Quem Somos" },
+  { href: "/especialidades", label: "Especialidades" },
+  { href: "/metodo-fertec", label: "Método Fertec" },
+  { href: "/nossa-conviccao", label: "Nossa Convicção" },
+  { href: "/projetos", label: "Projetos" },
   { href: "/contato", label: "Contato" },
 ];
 
@@ -19,14 +19,15 @@ const CAPABILITIES = [
 
 const SOCIAL_LINKS = [
   { href: "https://linkedin.com", label: "LinkedIn" },
-  { href: "https://instagram.com", label: "Instagram" },
+  { href: "", label: "|" },
+  { href: "", label: "Tel:(41) 3265-2475" },
 ];
 
 export default function Footer() {
   return (
     <footer className="border-t border-orange bg-bg-void">
       <div className="mx-auto max-w-[1280px] px-[clamp(1.5rem,5vw,4rem)] py-16">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 lg:grid-cols-3">
           <div className="flex flex-col gap-4">
             <span className="font-display text-2xl font-extrabold uppercase tracking-wide text-text-primary">
               Fertec
@@ -53,7 +54,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex flex-col gap-4">
+          {/* <div className="flex flex-col gap-4">
             <h3 className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary">
               Capacidades
             </h3>
@@ -64,7 +65,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           <div className="flex flex-col gap-4">
             <h3 className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary">

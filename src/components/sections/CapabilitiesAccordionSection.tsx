@@ -9,40 +9,28 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 const CAPABILITIES = [
   {
-    title: "Reengenharia de componentes industriais críticos",
+    title: "COMPREENDER",
     description:
-      "Revisão completa do projeto a partir do modo de falha real — geometria, material, tolerâncias e processo. Aplicável a eixos, buchas, mancais, engrenagens, dispositivos de fixação e demais componentes críticos de máquinas e linhas de produção.",
+      "A primeira etapa consiste em entender a necessidade apresentada e relacioná-la às informações disponíveis sobre a aplicação. Desenhos, amostras, histórico operacional, características do conjunto e condições de uso são analisados conforme sua relevância. Quando há falhas, desgaste ou desempenho insuficiente, essas evidências ajudam a compreender o comportamento observado em serviço. Quando a definição técnica já existe, a análise se concentra nos requisitos, interfaces, tolerâncias, montagem e condições de execução.",
     image: "/images/pages/indimg7.png",
   },
   {
-    title: "Soluções para obsolescência industrial",
+    title: "DESENVOLVER",
     description:
-      "Quando o fabricante original descontinua um componente, desenvolvemos uma solução funcional equivalente ou superior, validada para a aplicação real — sem depender de importação ou de fornecedores exclusivos.",
+      "As informações levantadas são transformadas nas definições técnicas necessárias ao projeto. Materiais e tratamentos térmicos são avaliados de acordo com as propriedades mecânicas e superficiais requeridas. Geometria e transições são definidas considerando carregamentos, solicitações mecânicas e restrições do conjunto. Tolerâncias, ajustes e acabamento superficial são definidos conforme a função das interfaces e suas condições de contato ou movimento. O desenvolvimento busca compatibilizar função, especificação e condições de execução.",
     image: "/images/pages/indimg8.png",
   },
   {
-    title: "Dispositivos mecânicos especiais",
+    title: "EXECUTAR",
     description:
-      "Projeto e execução de dispositivos sob medida para operações específicas — gabaritos de montagem, dispositivos de fixação e ferramentais de processo — desenvolvidos a partir da necessidade real da operação.",
+      "A definição do processo considera referências geométricas, sequência de fabricação, efeitos dos tratamentos térmicos, ajustagem, montagem e estratégias de controle. Fabricação e controle são conduzidos para obter e verificar as características que influenciam o funcionamento do componente no conjunto.",
     image: "/images/pages/indimg9.png",
   },
   {
-    title: "Componentes críticos para moldes industriais",
+    title: "VALIDAR",
     description:
-      "Reengenharia de elementos de moldes sujeitos a desgaste, fadiga térmica e impacto — postiços, machos, buchas de extração e sistemas de refrigeração — com foco em vida útil e repetibilidade dimensional.",
+      "Conformidade dimensional, atendimento funcional e comportamento em operação representam níveis distintos de verificação. A extensão da validação depende da natureza do projeto. Inspeção dimensional, montagem, testes funcionais e, quando aplicável, avaliação em serviço verificam o atendimento aos requisitos estabelecidos. Os resultados também podem servir de referência para futuras intervenções.",
     image: "/images/pages/indimg10.png",
-  },
-  {
-    title: "Melhoria de confiabilidade mecânica",
-    description:
-      "Revisão de componentes com desempenho instável, com ajustes de geometria, material e acabamento que aumentam a estabilidade do conjunto mecânico em operação.",
-    image: "/images/pages/indimg1.png",
-  },
-  {
-    title: "Manufatura técnica de precisão",
-    description:
-      "Execução do componente reengenheirado com controle dimensional rigoroso — usinagem CNC, retífica e processos complementares aplicados como etapa final de um projeto de engenharia, nunca como ponto de partida.",
-    image: "/images/pages/indimg2.png",
   },
 ];
 
@@ -50,12 +38,12 @@ export default function CapabilitiesAccordionSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[1rem]">
       <div className="mx-auto max-w-[1280px]">
-        <Eyebrow>Capacidades Técnicas</Eyebrow>
+        {/* <Eyebrow>Capacidades Técnicas</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
           Manufatura como consequência da engenharia
-        </SectionTitle>
+        </SectionTitle> */}
 
         <div className="mt-12 flex flex-col gap-4">
           {CAPABILITIES.map((item, index) => {
@@ -63,9 +51,8 @@ export default function CapabilitiesAccordionSection() {
             return (
               <div
                 key={item.title}
-                className={`border border-border-subtle bg-bg-deep transition-colors duration-200 ${
-                  isOpen ? "border-border-active" : ""
-                }`}
+                className={`border border-border-subtle bg-bg-deep transition-colors duration-200 ${isOpen ? "border-border-active" : ""
+                  }`}
               >
                 <button
                   type="button"
@@ -77,9 +64,8 @@ export default function CapabilitiesAccordionSection() {
                     {item.title}
                   </h3>
                   <PlusIcon
-                    className={`h-6 w-6 shrink-0 text-orange transition-transform duration-200 ${
-                      isOpen ? "rotate-45" : ""
-                    }`}
+                    className={`h-6 w-6 shrink-0 text-orange transition-transform duration-200 ${isOpen ? "rotate-45" : ""
+                      }`}
                   />
                 </button>
 

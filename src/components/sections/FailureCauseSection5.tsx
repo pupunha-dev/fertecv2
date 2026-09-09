@@ -20,7 +20,9 @@ export default function FailureCauseSection() {
             <Eyebrow>Especialidades</Eyebrow>
           </motion.div>
           <motion.div variants={fadeInUp}>
-            <SectionTitle as="h2">OBSOLESCÊNCIA INDUSTRIAL</SectionTitle>
+            <SectionTitle as="h2">MANUFATURA TÉCNICA
+
+            </SectionTitle>
           </motion.div>
         </div>
 
@@ -29,21 +31,23 @@ export default function FailureCauseSection() {
             variants={fadeInUp}
             className="font-sans text-lg leading-relaxed text-text-primary sm:text-xl"
           >
-            COMPONENTES OBSOLETOS NÃO PRECISAM DETERMINAR A SUBSTITUIÇÃO DE ATIVOS QUE AINDA GERAM VALOR À OPERAÇÃO.
+            CAPACIDADE DE EXECUÇÃO PARA APLICAÇÕES EM QUE OS REQUISITOS VÃO ALÉM DA GEOMETRIA.
+
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            A indisponibilidade de componentes pode tornar ativos ainda produtivos dependentes do fabricante original, de estoques remanescentes ou de fontes de fornecimento cada vez mais restritas.
+            Forma e dimensões não definem, isoladamente, a condição funcional de um componente.
+
+
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            A Fertec reconstrói as informações necessárias para desenvolver alternativas compatíveis com a função e as características do equipamento.
+            Material, propriedades requeridas, tolerâncias, acabamento superficial, referências, ajustes e critérios de controle também fazem parte de sua especificação.
+
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            Geometria, materiais, propriedades, tolerâncias e requisitos funcionais são definidos de acordo com a necessidade do projeto. Essas informações formam uma base técnica para fabricação, documentação e futuras intervenções.
-            Essa capacidade amplia a autonomia sobre componentes críticos e contribui para manter em operação ativos que continuam relevantes para o processo produtivo.
-
+            A Fertec executa componentes, dispositivos e ferramentais integrando fabricação, ajustagem, montagem e controle dimensional aos requisitos definidos para cada aplicação.
           </motion.p>
         </div>
       </motion.div>

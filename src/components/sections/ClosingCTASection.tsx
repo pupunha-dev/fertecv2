@@ -8,9 +8,10 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 interface ClosingCTASectionProps {
   eyebrow: string;
   title: string;
+  text: string;
 }
 
-export default function ClosingCTASection({ eyebrow, title }: ClosingCTASectionProps) {
+export default function ClosingCTASection({ eyebrow, title, text }: ClosingCTASectionProps) {
   return (
     <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
       <motion.div
@@ -30,6 +31,12 @@ export default function ClosingCTASection({ eyebrow, title }: ClosingCTASectionP
         >
           {title}
         </motion.h2>
+        <motion.p
+          variants={fadeInUp}
+          className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg"
+        >
+          {text}
+        </motion.p>
 
         <motion.div variants={fadeInUp}>
           <Button href="/contato" variant="primary">
