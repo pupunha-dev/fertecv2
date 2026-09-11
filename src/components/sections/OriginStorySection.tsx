@@ -17,11 +17,11 @@ export default function OriginStorySection() {
         className="mx-auto flex max-w-3xl flex-col gap-6"
       >
         <motion.div variants={fadeInUp}>
-          <Eyebrow>Trajetória</Eyebrow>
+          <Eyebrow>Evolução Técnica</Eyebrow>
         </motion.div>
 
         <motion.div variants={fadeInUp}>
-          <SectionTitle as="h2">A experiência que originou a Fertec</SectionTitle>
+          <SectionTitle as="h2">Evolução técnica</SectionTitle>
         </motion.div>
 
         <motion.div variants={fadeInUp}>
@@ -29,27 +29,25 @@ export default function OriginStorySection() {
         </motion.div>
 
         <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          A Fertec é resultado direto de uma trajetória construída dentro da
-          operação industrial — passando pela manutenção mecânica, pela
-          ferramentaria e pela engenharia de processos. Foi nesse percurso que
-          ficou evidente um padrão: a maioria das falhas que se repetem não é
-          resolvida porque é tratada como problema de reposição, não de
-          engenharia.
+          Todo componente existente traz informações sobre sua aplicação.
         </motion.p>
 
         <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          Acompanhar componentes críticos desde a falha até a solução —
-          passando pelo desenho, pela escolha de material e pelo processo de
-          fabricação — mostrou que o caminho mais curto para a confiabilidade
-          não é substituir mais rápido, e sim entender por que aquele
-          componente falhou primeiro.
+          Geometria, materiais, interfaces e sinais de desgaste ajudam a
+          compreender como foi concebido e como se comporta em operação.
         </motion.p>
 
         <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          Essa experiência prática, somada à formação técnica em engenharia
-          mecânica, deu origem à Fertec: uma empresa criada para tratar a
-          reengenharia de componentes industriais como o que ela realmente é —
-          um problema de engenharia, com método e responsabilidade técnica.
+          Evoluir não significa alterar por princípio. Significa preservar o
+          que permanece adequado e concentrar a engenharia nos pontos que
+          justificam revisão ou aprimoramento.
+        </motion.p>
+
+        <motion.p
+          variants={fadeInUp}
+          className="font-display text-2xl font-bold uppercase leading-snug text-text-accent sm:text-3xl"
+        >
+          Toda alteração precisa ter uma razão técnica.
         </motion.p>
       </motion.div>
     </section>

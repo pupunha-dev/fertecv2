@@ -22,7 +22,7 @@ export default function EngenhariaAplicadaPage() {
         title="EXPERIÊNCIA INDUSTRIAL APLICADA À EVOLUÇÃO TÉCNICA."
         subtitle="Componentes, equipamentos e ferramentais existentes trazem informações importantes sobre sua função, interfaces, características construtivas e comportamento em serviço. A Fertec atua quando essas informações precisam ser reconstruídas, interpretadas ou utilizadas para desenvolver uma nova alternativa.
 "
-        imageSrc="/images/pages/ESPECIALIDADES.png"
+        imageSrc="/images/pages/ESPECIALIDADES-CENTRALIZADO-hero.jpeg"
         imageAlt="Engenharia técnica aplicada a componentes industriais"
       />
       <FailureCauseSection />

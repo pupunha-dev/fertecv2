@@ -1,32 +1,32 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
-import AboutIntroSection from "@/components/sections/AboutIntroSection";
-import OriginStorySection from "@/components/sections/OriginStorySection";
-import PhilosophySection from "@/components/sections/PhilosophySection";
-import MissionVisionValuesSection from "@/components/sections/MissionVisionValuesSection";
-import PrinciplesSection from "@/components/sections/PrinciplesSection";
+import CasesListSection from "@/components/sections/CasesListSection";
+import ClosingCTASection from "@/components/sections/ClosingCTASection";
 
 export const metadata: Metadata = {
-  title: "Quem Somos | Fertec — Engenharia Aplicada",
+  title: "Cases Técnicos | Fertec — Engenharia Aplicada",
   description:
-    "Conheça a trajetória técnica e a filosofia de engenharia que originaram a Fertec, empresa de engenharia mecânica aplicada à confiabilidade operacional.",
+    "Biblioteca técnica de casos de reengenharia aplicada da Fertec — falhas recorrentes, condições de aplicação, caracterização e resultado operacional.",
 };
 
-export default function QuemSomosPage() {
+export default function CasesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Quem Somos"
-        title="Engenharia com Profundidade Técnica"
-        subtitle="A trajetória e a filosofia de engenharia que deram origem à Fertec."
-        imageSrc="/images/pages/indimg1.png"
-        imageAlt="Bancada de engenharia industrial"
+        eyebrow="Nossa Visão de Engenharia"
+        title="A ENGENHARIA CRIA VALOR QUANDO COMPREENDE A NECESSIDADE ANTES DE DEFINIR A ALTERNATIVA."
+        subtitle="Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido.
+É essa compreensão que orienta as decisões de engenharia.
+"
+        imageSrc="/images/pages/PROJETOS-CENTRALIZADO-hero.jpeg"
+        imageAlt="Biblioteca técnica de cases de engenharia aplicada"
       />
-      <AboutIntroSection />
-      <OriginStorySection />
-      <PhilosophySection />
-      <MissionVisionValuesSection />
-      <PrinciplesSection />
+      <CasesListSection />
+      <ClosingCTASection
+        eyebrow="Avaliação Técnica"
+        title="Tem uma falha recorrente que ainda não foi caracterizada?"
+        text=""
+      />
     </>
   );
 }

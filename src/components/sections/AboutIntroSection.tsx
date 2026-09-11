@@ -16,34 +16,23 @@ export default function AboutIntroSection() {
         className="mx-auto flex max-w-3xl flex-col gap-6"
       >
         <motion.div variants={fadeInUp}>
-          <Eyebrow>Quem Somos</Eyebrow>
+          <Eyebrow>Decisões Técnicas</Eyebrow>
         </motion.div>
 
         <motion.div variants={fadeInUp}>
-          <SectionTitle as="h2">Engenharia como ponto de partida</SectionTitle>
+          <SectionTitle as="h2">Decisões técnicas</SectionTitle>
         </motion.div>
 
         <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          A Fertec é uma empresa de engenharia mecânica aplicada à
-          confiabilidade operacional. Atuamos onde falhas recorrentes,
-          obsolescência de componentes e instabilidade operacional deixam de
-          ser tratadas como rotina e passam a exigir uma resposta de
-          engenharia.
+          Antes da fabricação, decisões sobre materiais, geometria,
+          tolerâncias, interfaces e demais características já influenciam o
+          comportamento de um componente em serviço.
         </motion.p>
 
         <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          Nosso trabalho começa antes da fabricação: caracterizamos o modo de
-          falha, revisamos a engenharia do componente e só então definimos a
-          melhor forma de executá-lo. Essa ordem — engenharia antes de
-          manufatura — é o que diferencia uma reengenharia de uma simples
-          cópia.
-        </motion.p>
-
-        <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          Atendemos plantas industriais que dependem de componentes críticos
-          para operar com previsibilidade, e que precisam de um parceiro
-          técnico capaz de entender a causa da falha — não apenas reproduzir
-          a peça que falhou.
+          Essas definições estão relacionadas entre si e, em conjunto,
+          determinam características importantes para o funcionamento da
+          aplicação.
         </motion.p>
       </motion.div>
     </section>

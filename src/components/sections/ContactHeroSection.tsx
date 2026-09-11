@@ -9,12 +9,12 @@ export default function ContactHeroSection() {
   const initial = shouldReduceMotion ? "visible" : "hidden";
 
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pb-[5rem] pt-[15vh]">
+    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pb-[2rem] pt-[15vh]">
       <motion.div
         initial={initial}
         animate="visible"
         variants={staggerContainer}
-        className="mx-auto flex max-w-3xl flex-col gap-6"
+        className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center"
       >
         <motion.div variants={fadeInUp}>
           <Eyebrow>Avaliação Técnica</Eyebrow>

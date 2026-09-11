@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NAV_LINKS = [
   { href: "/especialidades", label: "Especialidades" },
-  { href: "/metodo-fertec", label: "Método Fertec" },
+  { href: "/processos", label: "Processos" },
   { href: "/nossa-conviccao", label: "Nossa Convicção" },
   { href: "/projetos", label: "Projetos" },
   { href: "/contato", label: "Contato" },
@@ -18,9 +18,9 @@ const CAPABILITIES = [
 ];
 
 const SOCIAL_LINKS = [
-  { href: "https://linkedin.com", label: "LinkedIn" },
+  { href: "https://www.linkedin.com/company/fertec-ferramentaria-t-cnica/posts/?viewAsMember=true", label: "LinkedIn" },
   { href: "", label: "|" },
-  { href: "", label: "Tel:(41) 3265-2475" },
+  { href: "", label: "Tel:(41)3625-2745" },
 ];
 
 export default function Footer() {

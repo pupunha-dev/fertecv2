@@ -12,6 +12,7 @@ import {
 import Eyebrow from "@/components/ui/Eyebrow";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
+import Button from "../ui/Button";
 
 const PAIN_POINTS = [
   {
@@ -37,6 +38,12 @@ const PAIN_POINTS = [
     title: "Manufatura técnica",
     description:
       "Fabricação, recuperação, ajustagem, montagem e controle dimensional de componentes, dispositivos e ferramentais conforme os requisitos de cada aplicação.",
+  },
+  {
+    icon: CubeIcon,
+    title: "MOLDES E FERRAMENTAIS INDUSTRIAIS",
+    description:
+      "Manutenção, recuperação, modernização e reengenharia de moldes, ferramentais e seus componentes críticos.",
   },
 ];
 
@@ -71,6 +78,14 @@ export default function PainPointsSection() {
               <p className="font-sans text-sm text-text-secondary">{item.description}</p>
             </motion.div>
           ))}
+        </motion.div>
+        <motion.div
+          variants={fadeInUp}
+          className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-8 ml-6"
+        >
+          <Button href="/especialidades" variant="primary">
+            CONHEÇA NOSSAS ESPECIALIDADES
+          </Button>
         </motion.div>
       </div>
     </section>

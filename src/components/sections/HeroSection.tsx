@@ -22,11 +22,11 @@ export default function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden bg-bg-void pt-[15vh] pb-24">
       <Image
-        src="/images/hero/hero-home.png"
+        src="/images/pages/HOME-CENTRALIZADO-hero.jpeg"
         alt="Componente mecânico industrial em processo de reengenharia"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-center"
       />
 
       <div

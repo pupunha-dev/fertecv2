@@ -19,7 +19,7 @@ export default function CasesListSection() {
         {CASES.map((technicalCase) => (
           <motion.div key={technicalCase.slug} variants={fadeInUp}>
             <Link
-              href={`/nossa-conviccao/${technicalCase.slug}`}
+              href={`/projetos/${technicalCase.slug}`}
               className="group flex h-full flex-col border border-border-subtle bg-bg-deep transition-colors duration-200 hover:border-border-active"
             >
               <div className="relative aspect-[16/9] w-full overflow-hidden">

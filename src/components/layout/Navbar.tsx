@@ -8,9 +8,9 @@ import Button from "@/components/ui/Button";
 
 const NAV_LINKS = [
   { href: "/especialidades", label: "Especialidades" },
-  { href: "/metodo-fertec", label: "Método Fertec" },
-  { href: "/nossa-conviccao", label: "Nossa Convicção" },
+  { href: "/processos", label: "Processos" },
   { href: "/projetos", label: "Projetos" },
+  { href: "/nossa-conviccao", label: "Nossa Convicção" },
   { href: "/contato", label: "Contato" },
 ];
 

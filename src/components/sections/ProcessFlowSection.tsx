@@ -46,27 +46,49 @@ export default function ProcessFlowSection() {
           MÉTODO FERTEC
         </SectionTitle>
 
-        {/* Desktop: horizontal steps with connecting line */}
+        {/* Desktop: horizontal steps with connecting arrows */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="relative mt-16 hidden lg:grid lg:grid-cols-5 lg:gap-6"
+          className="mt-16 hidden lg:flex lg:w-full lg:items-start"
         >
-          <div className="pointer-events-none absolute left-0 right-0 top-7 h-px bg-orange" />
-          {STEPS.map((step) => (
-            <motion.div
+          {STEPS.map((step, index) => (
+            <div
               key={step.number}
-              variants={fadeInUp}
-              className="relative flex flex-col gap-4 bg-bg-void pr-6"
+              className="flex flex-1 items-start"
             >
-              <span className="font-mono text-4xl text-orange">{step.number}</span>
-              <h3 className="font-display text-xl font-bold uppercase text-text-primary">
-                {step.title}
-              </h3>
-              <p className="font-sans text-sm text-text-secondary">{step.description}</p>
-            </motion.div>
+              <motion.div
+                variants={fadeInUp}
+                className="flex w-full flex-col items-center gap-4 text-center"
+              >
+                <span className="font-mono text-4xl text-orange">{step.number}</span>
+                <h3 className="font-display text-xl font-bold uppercase text-text-primary">
+                  {step.title}
+                </h3>
+                <p className="font-sans text-sm text-text-secondary">{step.description}</p>
+              </motion.div>
+
+              {index < STEPS.length - 1 && (
+                <motion.svg
+                  variants={fadeInUp}
+                  className="mt-7 h-5 w-8 shrink-0 text-orange mx-4"
+                  viewBox="0 0 32 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M1 10H31M31 10L22 1M31 10L22 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </motion.svg>
+              )}
+            </div>
           ))}
         </motion.div>
 

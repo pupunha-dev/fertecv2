@@ -1,32 +1,30 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
-import CasesListSection from "@/components/sections/CasesListSection";
-import ClosingCTASection from "@/components/sections/ClosingCTASection";
+import AboutIntroSection from "@/components/sections/AboutIntroSection";
+import OriginStorySection from "@/components/sections/OriginStorySection";
+import PhilosophySection from "@/components/sections/PhilosophySection";
+import MissionVisionValuesSection from "@/components/sections/MissionVisionValuesSection";
 
 export const metadata: Metadata = {
-  title: "Cases Técnicos | Fertec — Engenharia Aplicada",
+  title: "Nossa Convicção | Fertec — Engenharia Aplicada",
   description:
-    "Biblioteca técnica de casos de reengenharia aplicada da Fertec — falhas recorrentes, condições de aplicação, caracterização e resultado operacional.",
+    "A convicção de engenharia que orienta a atuação da Fertec: compreender a necessidade antes de definir a alternativa técnica.",
 };
 
-export default function CasesPage() {
+export default function NossaConviccaoPage() {
   return (
     <>
       <PageHero
-        eyebrow="Nossa Visão de Engenharia"
+        eyebrow="Nossa Convicção"
         title="A ENGENHARIA CRIA VALOR QUANDO COMPREENDE A NECESSIDADE ANTES DE DEFINIR A ALTERNATIVA."
-        subtitle="Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido.
-É essa compreensão que orienta as decisões de engenharia.
-"
-        imageSrc="/images/pages/NOSSA VISÃO DE ENGENHARIA.png"
-        imageAlt="Biblioteca técnica de cases de engenharia aplicada"
+        subtitle="Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido. É essa compreensão que orienta as decisões de engenharia."
+        imageSrc="/images/pages/QUEM-SOMOS.png"
+        imageAlt="Ferramentaria técnica da Fertec"
       />
-      <CasesListSection />
-      <ClosingCTASection
-        eyebrow="Avaliação Técnica"
-        title="Tem uma falha recorrente que ainda não foi caracterizada?"
-        text=""
-      />
+      <AboutIntroSection />
+      <OriginStorySection />
+      <PhilosophySection />
+      <MissionVisionValuesSection />
     </>
   );
 }

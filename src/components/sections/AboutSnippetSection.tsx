@@ -19,8 +19,8 @@ export default function AboutSnippetSection() {
       >
         <motion.div variants={fadeInUp} className="relative aspect-[4/5] w-full overflow-hidden">
           <Image
-            src="/images/pages/indimg5.png"
-            alt="Bancada de engenharia industrial da Fertec"
+            src="/images/pages/QUEM-SOMOS.png"
+            alt="Ferramentaria técnica da Fertec"
             fill
             loading="lazy"
             className="object-cover"
@@ -29,37 +29,36 @@ export default function AboutSnippetSection() {
 
         <div className="flex flex-col gap-6">
           <motion.div variants={fadeInUp}>
-            <Eyebrow>Quem Somos</Eyebrow>
+            <Eyebrow>Fertec — Ferramentaria Técnica</Eyebrow>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <SectionTitle as="h2">Quem somos</SectionTitle>
+            <SectionTitle as="h2">
+              Experiência prática conectada à decisão técnica.
+            </SectionTitle>
           </motion.div>
 
           <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-            A Fertec nasceu da experiência prática de quem atuou diretamente
-            na manutenção e na engenharia de plantas industriais — e viu, de
-            perto, como falhas recorrentes são tratadas como rotina quando, na
-            verdade, são sintoma de um problema de engenharia não resolvido.
+            A experiência em ferramentaria permite considerar, desde o
+            desenvolvimento, aspectos relacionados a materiais, fabricação,
+            ajustagem, montagem e controle dimensional.
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-            Essa trajetória deu origem a uma forma diferente de atuar: antes
-            de fabricar, entender. Cada componente crítico é tratado como um
-            problema de engenharia a ser resolvido, não como uma peça a ser
-            copiada.
+            Essa proximidade entre engenharia e manufatura mantém as decisões
+            técnicas conectadas à realidade de fabricação e operação.
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-            Hoje, a Fertec aplica essa metodologia a componentes críticos,
-            dispositivos mecânicos especiais e soluções para obsolescência
-            industrial — sempre com foco em restaurar confiabilidade
-            operacional.
+          <motion.p variants={fadeInUp} className="font-sans text-sm font-medium text-text-secondary">
+            Curitiba · Paraná · Brasil
           </motion.p>
 
-          <motion.div variants={fadeInUp}>
-            <Button href="/projetos" variant="ghost" className="px-0">
-              Conhecer a Fertec →
+          <motion.div
+            variants={fadeInUp}
+            className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-8"
+          >
+            <Button href="/nossa-conviccao" variant="primary">
+              CONHEÇA NOSSA CONVICÇÃO
             </Button>
           </motion.div>
         </div>

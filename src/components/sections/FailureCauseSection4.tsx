@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Eyebrow from "@/components/ui/Eyebrow";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -20,9 +21,18 @@ export default function FailureCauseSection() {
             <Eyebrow>Especialidades</Eyebrow>
           </motion.div>
           <motion.div variants={fadeInUp}>
-            <SectionTitle as="h2">MOLDES E FERRAMENTAIS INDUSTRIAIS
+            <SectionTitle as="h2" size="sm">MOLDES E FERRAMENTAIS INDUSTRIAIS
 
             </SectionTitle>
+          </motion.div>
+          <motion.div variants={fadeInUp} className="relative h-40 w-full max-w-xs overflow-hidden">
+            <Image
+              src="/images/pages/MOLDES-FERRAMENTAIS.png"
+              alt="Moldes e ferramentais industriais"
+              fill
+              loading="lazy"
+              className="object-cover"
+            />
           </motion.div>
         </div>
 

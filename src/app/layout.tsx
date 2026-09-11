@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Inter, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 const barlowCondensed = Barlow_Condensed({
@@ -53,7 +52,6 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <ChatWidget />
       </body>
     </html>
   );
