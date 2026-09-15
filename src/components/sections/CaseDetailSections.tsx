@@ -25,13 +25,13 @@ const SECTIONS: Array<{
 
 export default function CaseDetailSections({ technicalCase }: CaseDetailSectionsProps) {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.05 }}
         variants={staggerContainer}
-        className="mx-auto flex max-w-5xl flex-col gap-12"
+        className="mx-auto flex max-w-5xl flex-col gap-8 lg:gap-12"
       >
         {SECTIONS.map(({ label, field, imageField }) => {
           const imageSrc = imageField ? (technicalCase[imageField] as string | undefined) : undefined;
@@ -40,10 +40,10 @@ export default function CaseDetailSections({ technicalCase }: CaseDetailSections
             <motion.div
               key={field}
               variants={fadeInUp}
-              className="border-t border-line-rule pt-8"
+              className="border-t border-line-rule pt-6 lg:pt-8"
             >
               <div
-                className={`grid grid-cols-1 gap-8 ${imageSrc ? "lg:grid-cols-[1fr_2fr] lg:items-center" : ""}`}
+                className={`grid grid-cols-1 gap-6 lg:gap-8 ${imageSrc ? "lg:grid-cols-[1fr_2fr] lg:items-center" : ""}`}
               >
                 {imageSrc && (
                   <div className="relative aspect-[16/9] w-full overflow-hidden">

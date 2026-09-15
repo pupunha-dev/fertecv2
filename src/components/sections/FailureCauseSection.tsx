@@ -8,13 +8,13 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function FailureCauseSection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
-        className="mx-auto grid max-w-[1280px] grid-cols-1 gap-12 lg:grid-cols-[1fr_2fr]"
+        className="mx-auto grid max-w-[1280px] grid-cols-1 gap-8 lg:grid-cols-[1fr_2fr] lg:gap-12"
       >
         <div className="flex flex-col gap-4 lg:sticky lg:top-32 lg:self-start">
           <motion.div variants={fadeInUp}>

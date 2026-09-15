@@ -46,7 +46,7 @@ const STEPS = [
 
 export default function MethodologySection() {
   return (
-    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <div className="mx-auto max-w-[1280px]">
         <Eyebrow>Metodologia</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
@@ -58,13 +58,13 @@ export default function MethodologySection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
           variants={staggerContainer}
-          className="mt-16 flex flex-col"
+          className="mt-8 flex flex-col lg:mt-16"
         >
           {STEPS.map((step, index) => (
             <motion.div
               key={step.number}
               variants={fadeInUp}
-              className={`grid grid-cols-[auto_1fr] gap-6 border-line-rule py-8 sm:grid-cols-[6rem_1fr] sm:gap-10 ${
+              className={`grid grid-cols-[auto_1fr] gap-4 border-line-rule py-6 sm:grid-cols-[6rem_1fr] sm:gap-10 lg:py-8 ${
                 index !== STEPS.length - 1 ? "border-b" : ""
               }`}
             >

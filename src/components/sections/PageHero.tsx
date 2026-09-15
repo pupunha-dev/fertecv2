@@ -41,7 +41,7 @@ export default function PageHero({ eyebrow, title, subtitle, imageSrc, imageAlt 
 
         <motion.h1
           variants={fadeInUp}
-          className="mt-4 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] font-extrabold uppercase leading-[0.95] text-text-primary"
+          className="mt-4 max-w-3xl font-display text-[clamp(2rem,4.5vw,3.75rem)] font-bold uppercase leading-[1.05] text-text-primary"
         >
           {title}
         </motion.h1>
@@ -49,7 +49,7 @@ export default function PageHero({ eyebrow, title, subtitle, imageSrc, imageAlt 
         {subtitle && (
           <motion.p
             variants={fadeInUp}
-            className="mt-4 max-w-xl font-sans text-base text-text-secondary sm:text-lg"
+            className="mt-4 max-w-2xl font-sans text-base text-text-secondary sm:text-lg"
           >
             {subtitle}
           </motion.p>

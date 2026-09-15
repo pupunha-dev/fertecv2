@@ -51,16 +51,16 @@ const PAIN_POINTS = [
 
 export default function PainPointsSection() {
   return (
-    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <div className="mx-auto max-w-[1280px]">
-        <div className="flex flex-col gap-6 border-b border-border-subtle pb-4">
-          <SectionTitle as="h2" className="mt-12 max-w-3xl">
+        <div className="flex flex-col gap-4 border-b border-border-subtle pb-4 lg:gap-6">
+          <SectionTitle as="h2" className="mt-2 max-w-3xl lg:mt-8">
             Especialidades
           </SectionTitle>
 
           <Eyebrow>Ativos Industriais</Eyebrow>
 
-          <h3 className="font-display text-2xl font-bold uppercase text-text-primary sm:text-3xl">
+          <h3 className="font-display text-xl font-bold uppercase text-text-primary sm:text-2xl">
             Preservar a capacidade produtiva de ativos estratégicos.
           </h3>
 
@@ -87,7 +87,7 @@ export default function PainPointsSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:mt-8 lg:grid-cols-3"
         >
           {PAIN_POINTS.map((item) => (
             <motion.div
@@ -98,7 +98,7 @@ export default function PainPointsSection() {
               className="flex flex-col gap-4 border border-border-subtle bg-bg-surface p-6 transition-colors duration-200 hover:border-border-active"
             >
               <item.icon className="h-8 w-8 stroke-orange text-orange" strokeWidth={1.5} />
-              <h3 className="font-display text-xl font-bold uppercase text-text-primary sm:text-2xl">
+              <h3 className="font-display text-lg font-bold uppercase text-text-primary sm:text-xl">
                 {item.title}
               </h3>
               <p className="font-sans text-base text-text-secondary">{item.description}</p>
@@ -107,7 +107,7 @@ export default function PainPointsSection() {
         </motion.div>
         <motion.div
           variants={fadeInUp}
-          className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-8 ml-6"
+          className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-6 ml-6 lg:mt-8"
         >
           <Button href="/especialidades" variant="primary">
             CONHEÇA NOSSAS ESPECIALIDADES

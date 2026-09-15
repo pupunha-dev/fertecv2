@@ -17,7 +17,7 @@ const RESULTS = [
 
 export default function ResultsSection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <div className="mx-auto max-w-[1280px]">
         <Eyebrow>Resultados Operacionais</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
@@ -29,7 +29,7 @@ export default function ResultsSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="mt-12 grid grid-cols-1 gap-x-12 gap-y-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-6 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-2 sm:gap-y-6 lg:mt-12 lg:grid-cols-3"
         >
           {RESULTS.map((item) => (
             <motion.div key={item} variants={fadeInUp} className="flex items-start gap-3">
@@ -44,7 +44,7 @@ export default function ResultsSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
           variants={fadeInUp}
-          className="mt-16 text-center font-display text-3xl font-bold uppercase leading-snug text-text-primary sm:text-4xl"
+          className="mt-8 text-center font-display text-3xl font-bold uppercase leading-snug text-text-primary sm:text-4xl lg:mt-16"
         >
           Confiabilidade operacional como resultado da engenharia.
         </motion.p>

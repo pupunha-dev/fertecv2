@@ -35,7 +35,7 @@ export default function CapabilitiesAccordionSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="mt-12 grid grid-cols-1 gap-6"
+          className="mt-6 grid grid-cols-1 gap-4 lg:mt-12 lg:gap-6"
         >
           {CAPABILITIES.map((item) => (
             <motion.div

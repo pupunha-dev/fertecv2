@@ -40,7 +40,7 @@ const CAPABILITIES = [
 
 export default function CapabilitiesSection() {
   return (
-    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <div className="mx-auto max-w-[1280px]">
         <Eyebrow>Engenharia Aplicada a Resultado</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
@@ -52,7 +52,7 @@ export default function CapabilitiesSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="mt-12 grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-2 lg:grid-cols-3"
+          className="mt-6 grid grid-cols-1 gap-x-12 gap-y-6 md:grid-cols-2 lg:mt-12 lg:grid-cols-3 lg:gap-y-10"
         >
           {CAPABILITIES.map((item) => (
             <motion.div key={item.title} variants={fadeInUp} className="flex flex-col gap-2">
@@ -69,7 +69,7 @@ export default function CapabilitiesSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
           variants={fadeInUp}
-          className="mt-16 max-w-3xl font-display text-2xl font-bold uppercase leading-snug text-text-primary sm:text-3xl"
+          className="mt-8 max-w-3xl font-display text-2xl font-bold uppercase leading-snug text-text-primary sm:text-3xl lg:mt-16"
         >
           Usinagem de precisão é consequência da engenharia — nunca o ponto de
           partida.

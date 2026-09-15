@@ -14,7 +14,7 @@ export default function ContactHeroSection() {
         initial={initial}
         animate="visible"
         variants={staggerContainer}
-        className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center"
+        className="mx-auto flex max-w-[1280px] flex-col gap-6"
       >
         <motion.div variants={fadeInUp}>
           <Eyebrow>Avaliação Técnica</Eyebrow>
@@ -22,7 +22,7 @@ export default function ContactHeroSection() {
 
         <motion.h1
           variants={fadeInUp}
-          className="font-display text-[clamp(2rem,5vw,4rem)] font-extrabold uppercase leading-tight text-text-primary"
+          className="max-w-3xl font-display text-[clamp(2rem,4.5vw,3.75rem)] font-bold uppercase leading-[1.05] text-text-primary"
         >
           NOVAS POSSIBILIDADES COMEÇAM PELA COMPREENSÃO DE UMA NECESSIDADE TÉCNICA.
         </motion.h1>

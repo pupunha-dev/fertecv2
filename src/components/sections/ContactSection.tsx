@@ -29,7 +29,7 @@ const CHAT_BENEFITS = [
 
 export default function ContactSection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pb-[7rem]">
+    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pb-[clamp(3rem,6vw,5rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -37,7 +37,7 @@ export default function ContactSection() {
         variants={staggerContainer}
         className="mx-auto max-w-[1280px]"
       >
-        <motion.div variants={fadeInUp} className="mb-12 flex flex-col gap-4">
+        <motion.div variants={fadeInUp} className="mb-6 flex flex-col gap-4 lg:mb-12">
           <Eyebrow>Como funciona</Eyebrow>
           <SectionTitle as="h2">Contato direto com a engenharia</SectionTitle>
           <p className="max-w-2xl font-sans text-base text-text-secondary sm:text-lg">
@@ -69,7 +69,7 @@ export default function ContactSection() {
 
         <motion.div
           variants={fadeInUp}
-          className="mt-12 flex flex-col gap-3 border-t border-line-rule pt-8"
+          className="mt-6 flex flex-col gap-3 border-t border-line-rule pt-6 lg:mt-12 lg:pt-8"
         >
           <p className="font-sans text-sm text-text-secondary">
             <span className="text-text-primary">E-mail:</span>{" "}

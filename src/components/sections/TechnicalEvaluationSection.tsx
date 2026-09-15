@@ -18,13 +18,13 @@ const TRIGGERS = [
 
 export default function TechnicalEvaluationSection() {
   return (
-    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
-        className="mx-auto flex max-w-[1280px] flex-col gap-6"
+        className="mx-auto flex max-w-[1280px] flex-col gap-4 lg:gap-6"
       >
         <motion.div variants={fadeInUp}>
           <Eyebrow>Avaliação Técnica</Eyebrow>

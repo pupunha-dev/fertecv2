@@ -5,22 +5,20 @@ const NAV_LINKS = [
   { href: "/processos", label: "Processos" },
   { href: "/nossa-conviccao", label: "Nossa Convicção" },
   { href: "/projetos", label: "Projetos" },
-  { href: "/contato", label: "Contato" },
+  // { href: "/contato", label: "Contato" },
 ];
 
-const CAPABILITIES = [
-  "Reengenharia de componentes críticos",
-  "Soluções para obsolescência industrial",
-  "Dispositivos mecânicos especiais",
-  "Componentes para moldes industriais",
-  "Melhoria de confiabilidade mecânica",
-  "Manufatura técnica de precisão",
-];
+// const CAPABILITIES = [
+//   "Reengenharia de componentes críticos",
+//   "Soluções para obsolescência industrial",
+//   "Dispositivos mecânicos especiais",
+//   "Componentes para moldes industriais",
+//   "Melhoria de confiabilidade mecânica",
+//   "Manufatura técnica de precisão",
+// ];
 
 const SOCIAL_LINKS = [
-  { href: "https://www.linkedin.com/company/fertec-ferramentaria-t-cnica/posts/?viewAsMember=true", label: "LinkedIn" },
-  { href: "", label: "|" },
-  { href: "", label: "Tel:(41)3625-2745" },
+  { href: "https://br.linkedin.com/company/fertec-ferramentaria-t-cnica", label: "LinkedIn" },
 ];
 
 export default function Footer() {
@@ -33,13 +31,13 @@ export default function Footer() {
               Fertec
             </span>
             <p className="max-w-[28ch] font-sans text-sm text-text-secondary">
-              Engenharia aplicada à confiabilidade operacional.
+              Ferramentaria Técnica
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <h3 className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary">
-              Navegação
+              VISÃO GERAL
             </h3>
             <nav className="flex flex-col gap-3">
               {NAV_LINKS.map((link) => (
@@ -72,12 +70,23 @@ export default function Footer() {
               Contato
             </h3>
             <a
-              href="mailto:contato@fertec.com.br"
+              href="mailto:comercial@fertec.com.br"
               className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary"
             >
-              contato@fertec.com.br
+              comercial@fertec.com.br
             </a>
-            <p className="font-sans text-sm text-text-secondary">Curitiba / PR</p>
+            <p
+
+              className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary"
+            >
+              Telefone / Whatsapp:<a
+                href="https://wa.me/554136252745"
+                className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary pl-2"
+              >
+                (41) 3265-2745
+              </a>
+            </p>
+
             <div className="flex gap-4">
               {SOCIAL_LINKS.map((social) => (
                 <a
@@ -91,6 +100,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+            <p className="font-sans text-sm text-text-secondary">Curitiba / PR</p>
           </div>
         </div>
 

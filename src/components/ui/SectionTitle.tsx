@@ -8,8 +8,8 @@ interface SectionTitleProps {
 }
 
 const SIZE_CLASSES: Record<NonNullable<SectionTitleProps["size"]>, string> = {
-  default: "text-[clamp(2rem,4vw,3.5rem)]",
-  sm: "text-[clamp(1.5rem,2.5vw,2rem)]",
+  default: "text-[clamp(1.75rem,3vw,2.75rem)]",
+  sm: "text-[clamp(1.25rem,2vw,1.5rem)]",
 };
 
 export default function SectionTitle({

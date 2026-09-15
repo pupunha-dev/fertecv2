@@ -20,7 +20,7 @@ export default function HeroSection() {
   const initial = shouldReduceMotion ? "visible" : "hidden";
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-bg-void pt-[15vh] pb-24">
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-bg-void pt-[15vh] pb-16 lg:pb-24">
       <Image
         src="/images/pages/HOME-CENTRALIZADO-hero.jpeg"
         alt="Componente mecânico industrial em processo de reengenharia"
@@ -41,7 +41,7 @@ export default function HeroSection() {
         initial={initial}
         animate="visible"
         variants={staggerContainer}
-        className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col gap-12 px-[clamp(1.5rem,5vw,4rem)] lg:grid lg:grid-cols-[1fr_auto] lg:items-end"
+        className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col gap-6 px-[clamp(1.5rem,5vw,4rem)] lg:grid lg:grid-cols-[1fr_auto] lg:items-end lg:gap-12"
       >
         <div className="flex max-w-3xl flex-col gap-6">
           <motion.div variants={fadeInUp}>
@@ -50,8 +50,7 @@ export default function HeroSection() {
 
           <motion.h1
             variants={fadeInUp}
-            className="font-display text-6xl font-extrabold uppercase leading-[0.95] text-text-primary"
-          // text-[clamp(2.5rem,4vw+2rem,7rem)]
+            className="font-display text-[clamp(2.25rem,4vw,3.75rem)] font-bold uppercase leading-[1.05] text-text-primary"
           >
             ENGENHARIA MECÂNICA, FERRAMENTARIA E MANUFATURA TÉCNICA PARA NECESSIDADES INDUSTRIAIS CRÍTICAS.
           </motion.h1>

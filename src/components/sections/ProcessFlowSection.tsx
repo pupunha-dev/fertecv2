@@ -36,7 +36,7 @@ const STEPS = [
 
 export default function ProcessFlowSection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
+    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <div className="mx-auto max-w-[1280px]">
         <Eyebrow>MÉTODO FERTEC</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
@@ -58,9 +58,9 @@ export default function ProcessFlowSection() {
             >
               <motion.div
                 variants={fadeInUp}
-                className="flex w-full flex-col items-center gap-4 text-center"
+                className="flex w-full flex-col items-start gap-4 text-left"
               >
-                <h3 className="font-display text-2xl font-extrabold uppercase text-text-primary">
+                <h3 className="font-display text-xl font-bold uppercase text-text-primary">
                   {step.title}
                 </h3>
                 <p className="font-sans text-base text-text-secondary">{step.description}</p>
@@ -94,13 +94,13 @@ export default function ProcessFlowSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="mt-12 flex flex-col border-t border-line-rule lg:hidden"
+          className="mt-6 flex flex-col border-t border-line-rule lg:hidden"
         >
           {STEPS.map((step, index) => (
             <motion.div key={step.number} variants={fadeInUp}>
-              <div className="flex items-center justify-between gap-4 border-b border-line-rule py-6">
+              <div className="flex items-center justify-between gap-4 border-b border-line-rule py-4 lg:py-6">
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-display text-xl font-extrabold uppercase text-text-primary">
+                  <h3 className="font-display text-lg font-bold uppercase text-text-primary">
                     {step.title}
                   </h3>
                   <p className="font-sans text-base text-text-secondary">{step.description}</p>
@@ -119,7 +119,7 @@ export default function ProcessFlowSection() {
 
         <motion.div
           variants={fadeInUp}
-          className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-8"
+          className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-6 lg:mt-8"
         >
           <Button href="/processos" variant="primary">
             CONHEÇA NOSSO PROCESSO

@@ -54,7 +54,7 @@ export default function CaseHeroSection({ technicalCase }: CaseHeroSectionProps)
 
         <motion.h1
           variants={fadeInUp}
-          className="mt-4 max-w-3xl font-display text-[clamp(2rem,5vw,4rem)] font-extrabold uppercase leading-[1.05] text-text-primary"
+          className="mt-4 max-w-3xl font-display text-[clamp(1.75rem,4vw,3.25rem)] font-bold uppercase leading-[1.1] text-text-primary"
         >
           {technicalCase.titulo}
         </motion.h1>
