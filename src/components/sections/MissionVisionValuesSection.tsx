@@ -7,13 +7,13 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function MissionVisionValuesSection() {
   return (
-    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
+    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(2rem,4vw,3rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
-        className="mx-auto flex max-w-3xl flex-col gap-6"
+        className="mx-auto flex max-w-[1280px] flex-col gap-4"
       >
         <motion.div variants={fadeInUp}>
           <Eyebrow>Fertec Ferramentaria Técnica</Eyebrow>
