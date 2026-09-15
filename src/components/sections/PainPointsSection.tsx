@@ -51,7 +51,7 @@ export default function PainPointsSection() {
   return (
     <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
       <div className="mx-auto max-w-[1280px]">
-        <Eyebrow>Desafios da Operação</Eyebrow>
+        {/* <Eyebrow>Desafios da Operação</Eyebrow> */}
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
           Especialidades
         </SectionTitle>
