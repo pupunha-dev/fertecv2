@@ -15,7 +15,7 @@ export default function CapacidadesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Processos"
+        eyebrow="Processo"
         title="UMA DECISÃO TÉCNICA CONSISTENTE COMEÇA PELA COMPREENSÃO DA NECESSIDADE E DOS REQUISITOS DA APLICAÇÃO."
         subtitle=""
         imageSrc="/images/pages/PROCESSOS-CENTRALIZADO-hero.jpeg"
