@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
+import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import Eyebrow from "@/components/ui/Eyebrow";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
@@ -36,14 +35,12 @@ const STEPS = [
 ];
 
 export default function ProcessFlowSection() {
-  const [openIndex, setOpenIndex] = useState(0);
-
   return (
     <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
       <div className="mx-auto max-w-[1280px]">
-        <Eyebrow>PROCESSOS</Eyebrow>
+        <Eyebrow>MÉTODO FERTEC</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
-          MÉTODO FERTEC
+          PROCESSO
         </SectionTitle>
 
         {/* Desktop: horizontal steps with connecting arrows */}
@@ -63,17 +60,16 @@ export default function ProcessFlowSection() {
                 variants={fadeInUp}
                 className="flex w-full flex-col items-center gap-4 text-center"
               >
-                <span className="font-mono text-4xl text-orange">{step.number}</span>
-                <h3 className="font-display text-xl font-bold uppercase text-text-primary">
+                <h3 className="font-display text-2xl font-extrabold uppercase text-text-primary">
                   {step.title}
                 </h3>
-                <p className="font-sans text-sm text-text-secondary">{step.description}</p>
+                <p className="font-sans text-base text-text-secondary">{step.description}</p>
               </motion.div>
 
               {index < STEPS.length - 1 && (
                 <motion.svg
                   variants={fadeInUp}
-                  className="mt-7 h-5 w-8 shrink-0 text-orange mx-4"
+                  className="mt-8 h-5 w-9 shrink-0 text-orange mx-2"
                   viewBox="0 0 32 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +78,7 @@ export default function ProcessFlowSection() {
                   <path
                     d="M1 10H31M31 10L22 1M31 10L22 19"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="4"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
@@ -92,54 +88,40 @@ export default function ProcessFlowSection() {
           ))}
         </motion.div>
 
-        {/* Mobile / tablet: vertical accordion */}
-        <div className="mt-12 flex flex-col border-t border-line-rule lg:hidden">
-          {STEPS.map((step, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <div key={step.number} className="border-b border-line-rule">
-                <button
-                  type="button"
-                  onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                  aria-expanded={isOpen}
-                  className="flex w-full items-center justify-between gap-4 py-6 text-left"
-                >
-                  <span className="flex items-center gap-4">
-                    <span className="font-mono text-2xl text-orange">{step.number}</span>
-                    <span className="font-display text-lg font-bold uppercase text-text-primary">
-                      {step.title}
-                    </span>
-                  </span>
-                  <ChevronDownIcon
-                    className={`h-5 w-5 shrink-0 text-text-secondary transition-transform duration-200 ${isOpen ? "rotate-180" : ""
-                      }`}
+        {/* Mobile / tablet: fixed vertical flow */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer}
+          className="mt-12 flex flex-col border-t border-line-rule lg:hidden"
+        >
+          {STEPS.map((step, index) => (
+            <motion.div key={step.number} variants={fadeInUp}>
+              <div className="flex items-center justify-between gap-4 border-b border-line-rule py-6">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-display text-xl font-extrabold uppercase text-text-primary">
+                    {step.title}
+                  </h3>
+                  <p className="font-sans text-base text-text-secondary">{step.description}</p>
+                </div>
+                {index < STEPS.length - 1 && (
+                  <ArrowDownIcon
+                    className="h-5 w-5 shrink-0 text-orange"
+                    strokeWidth={3}
+                    aria-hidden="true"
                   />
-                </button>
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="overflow-hidden"
-                    >
-                      <p className="pb-6 font-sans text-sm text-text-secondary">
-                        {step.description}
-                      </p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                )}
               </div>
-            );
-          })}
-        </div>
+            </motion.div>
+          ))}
+        </motion.div>
 
         <motion.div
           variants={fadeInUp}
           className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-8"
         >
-          <Button href="/metodo-fertec" variant="primary">
+          <Button href="/processos" variant="primary">
             CONHEÇA NOSSO PROCESSO
           </Button>
         </motion.div>

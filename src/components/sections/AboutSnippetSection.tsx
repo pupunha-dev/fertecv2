@@ -15,9 +15,12 @@ export default function AboutSnippetSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
-        className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-12 lg:grid-cols-2"
+        className="mx-auto grid max-w-[1280px] grid-cols-1 items-stretch gap-12 lg:grid-cols-[5fr_7fr]"
       >
-        <motion.div variants={fadeInUp} className="relative aspect-[4/5] w-full overflow-hidden">
+        <motion.div
+          variants={fadeInUp}
+          className="relative aspect-[4/5] w-full overflow-hidden lg:aspect-auto lg:min-h-[420px]"
+        >
           <Image
             src="/images/pages/QUEM-SOMOS.png"
             alt="Ferramentaria técnica da Fertec"

@@ -24,7 +24,7 @@ export default function TechnicalEvaluationSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
-        className="mx-auto flex max-w-[900px] flex-col items-center gap-6 text-center"
+        className="mx-auto flex max-w-[1280px] flex-col gap-6"
       >
         <motion.div variants={fadeInUp}>
           <Eyebrow>Avaliação Técnica</Eyebrow>

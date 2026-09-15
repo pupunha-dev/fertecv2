@@ -11,6 +11,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Eyebrow from "@/components/ui/Eyebrow";
 import SectionTitle from "@/components/ui/SectionTitle";
+import OrangeRule from "@/components/ui/OrangeRule";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import Button from "../ui/Button";
 
@@ -35,33 +36,58 @@ const PAIN_POINTS = [
   },
   {
     icon: CubeIcon,
-    title: "Manufatura técnica",
-    description:
-      "Fabricação, recuperação, ajustagem, montagem e controle dimensional de componentes, dispositivos e ferramentais conforme os requisitos de cada aplicação.",
-  },
-  {
-    icon: CubeIcon,
     title: "MOLDES E FERRAMENTAIS INDUSTRIAIS",
     description:
       "Manutenção, recuperação, modernização e reengenharia de moldes, ferramentais e seus componentes críticos.",
   },
+  {
+    icon: CubeIcon,
+    title: "Manufatura técnica",
+    description:
+      "Fabricação, recuperação, ajustagem, montagem e controle dimensional de componentes, dispositivos e ferramentais conforme os requisitos de cada aplicação.",
+  },
+
 ];
 
 export default function PainPointsSection() {
   return (
     <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[7rem]">
       <div className="mx-auto max-w-[1280px]">
-        {/* <Eyebrow>Desafios da Operação</Eyebrow> */}
-        <SectionTitle as="h2" className="mt-4 max-w-3xl">
-          Especialidades
-        </SectionTitle>
+        <div className="flex flex-col gap-6 border-b border-border-subtle pb-4">
+          <SectionTitle as="h2" className="mt-12 max-w-3xl">
+            Especialidades
+          </SectionTitle>
+
+          <Eyebrow>Ativos Industriais</Eyebrow>
+
+          <h3 className="font-display text-2xl font-bold uppercase text-text-primary sm:text-3xl">
+            Preservar a capacidade produtiva de ativos estratégicos.
+          </h3>
+
+          <OrangeRule />
+
+          <div className="grid grid-cols-1 gap-x-12 gap-y-4 lg:grid-cols-2">
+            <p className="font-sans text-base text-text-secondary sm:text-lg">
+              A vida útil de um ativo industrial muitas vezes supera o ciclo de
+              fornecimento de seus componentes. Descontinuidade, indisponibilidade
+              ou ausência de documentação técnica podem comprometer equipamentos
+              que continuam relevantes para o processo produtivo.
+            </p>
+
+            <p className="font-sans text-base text-text-secondary sm:text-lg">
+              Nessas situações, reconstruir as informações técnicas necessárias
+              permite desenvolver alternativas compatíveis com a função, as
+              interfaces e as condições de operação.
+            </p>
+          </div>
+        </div>
 
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {PAIN_POINTS.map((item) => (
             <motion.div
@@ -75,7 +101,7 @@ export default function PainPointsSection() {
               <h3 className="font-display text-xl font-bold uppercase text-text-primary sm:text-2xl">
                 {item.title}
               </h3>
-              <p className="font-sans text-sm text-text-secondary">{item.description}</p>
+              <p className="font-sans text-base text-text-secondary">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

@@ -1,5 +1,4 @@
 import HeroSection from "@/components/sections/HeroSection";
-import IndustrialAssetsSection from "@/components/sections/IndustrialAssetsSection";
 import PainPointsSection from "@/components/sections/PainPointsSection";
 import EngineeringSection from "@/components/sections/EngineeringSection";
 import ProcessFlowSection from "@/components/sections/ProcessFlowSection";
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <IndustrialAssetsSection />
       <PainPointsSection />
       {/* <EngineeringSection /> */}
       <ProcessFlowSection />
