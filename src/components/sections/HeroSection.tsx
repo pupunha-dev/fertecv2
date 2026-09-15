@@ -80,7 +80,7 @@ export default function HeroSection() {
             variants={fadeInUp}
             className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center"
           >
-            <Button href="/contato" variant="primary">
+            <Button href="/contato" variant="primary" className="normal-case">
               Solicitar Avaliação Técnica
             </Button>
             {/* <Button href="/quem-somos" variant="ghost">

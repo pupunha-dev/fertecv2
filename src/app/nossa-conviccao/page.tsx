@@ -4,6 +4,7 @@ import AboutIntroSection from "@/components/sections/AboutIntroSection";
 import OriginStorySection from "@/components/sections/OriginStorySection";
 import PhilosophySection from "@/components/sections/PhilosophySection";
 import MissionVisionValuesSection from "@/components/sections/MissionVisionValuesSection";
+import ClosingCTASection from "@/components/sections/ClosingCTASection";
 
 export const metadata: Metadata = {
   title: "Nossa Convicção | Fertec — Engenharia Aplicada",
@@ -25,6 +26,11 @@ export default function NossaConviccaoPage() {
       <OriginStorySection />
       <PhilosophySection />
       <MissionVisionValuesSection />
+      <ClosingCTASection
+        eyebrow="Avaliação Técnica"
+        title="Sua operação enfrenta uma necessidade técnica que exige mais do que fabricação?"
+        text="Apresente sua aplicação à Fertec."
+      />
     </>
   );
 }

@@ -8,10 +8,10 @@ import Button from "@/components/ui/Button";
 
 const NAV_LINKS = [
   { href: "/especialidades", label: "Especialidades" },
-  { href: "/processos", label: "Processos" },
-  { href: "/projetos", label: "Projetos" },
+  { href: "/processos", label: "Processo" },
   { href: "/nossa-conviccao", label: "Nossa Convicção" },
-  { href: "/contato", label: "Contato" },
+  { href: "/projetos", label: "Projetos" },
+  // { href: "/contato", label: "Contato" },
 ];
 
 export default function Navbar() {
@@ -86,7 +86,11 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href="/contato" variant="primary">
+          <Button
+            href="/contato"
+            variant="primary"
+            className="normal-case border-orange bg-transparent text-orange hover:bg-orange hover:text-bg-void"
+          >
             Solicitar Avaliação Técnica
           </Button>
         </div>
@@ -157,7 +161,7 @@ export default function Navbar() {
           href="https://wa.me/554132652745?text=Vim%20do%20site%20da%20Fertec"
           variant="primary"
           onClick={() => setIsMenuOpen(false)}
-          className="mt-auto justify-center"
+          className="mt-auto justify-center whitespace-nowrap border-orange bg-transparent px-4 text-[11px] text-orange hover:bg-orange hover:text-bg-void"
         >
           Solicitar Avaliação Técnica
         </Button>
