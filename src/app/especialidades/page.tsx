@@ -18,7 +18,7 @@ export default function EngenhariaAplicadaPage() {
   return (
     <>
       <PageHero
-        eyebrow="Engenharia Aplicada"
+        eyebrow=""
         title="EXPERIÊNCIA INDUSTRIAL APLICADA À EVOLUÇÃO TÉCNICA."
         subtitle="Componentes, equipamentos e ferramentais existentes trazem informações importantes sobre sua função, interfaces, características construtivas e comportamento em serviço. A Fertec atua quando essas informações precisam ser reconstruídas, interpretadas ou utilizadas para desenvolver uma nova alternativa.
 "
