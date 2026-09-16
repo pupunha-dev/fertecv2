@@ -18,8 +18,10 @@ export default function CapacidadesPage() {
         eyebrow="Processo"
         title="UMA DECISÃO TÉCNICA CONSISTENTE COMEÇA PELA COMPREENSÃO DA NECESSIDADE E DOS REQUISITOS DA APLICAÇÃO."
         subtitle=""
-        imageSrc="/images/pages/PROCESSOS-CENTRALIZADO-hero.jpeg"
+        imageSrc="/images/hero/HERO-PROCESSO-BANNER.svg"
         imageAlt="Manufatura técnica de precisão como consequência da engenharia"
+
+        imageClassName="object-cover object-right"
       />
       <AboutIntroSection2 />
       <CapabilitiesAccordionSection />

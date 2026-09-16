@@ -11,15 +11,27 @@ interface PageHeroProps {
   subtitle?: string;
   imageSrc: string;
   imageAlt: string;
+  imageWrapperClassName?: string;
+  imageClassName?: string;
 }
 
-export default function PageHero({ eyebrow, title, subtitle, imageSrc, imageAlt }: PageHeroProps) {
+export default function PageHero({
+  eyebrow,
+  title,
+  subtitle,
+  imageSrc,
+  imageAlt,
+  imageWrapperClassName = "absolute inset-0",
+  imageClassName = "object-cover",
+}: PageHeroProps) {
   const shouldReduceMotion = useReducedMotion();
   const initial = shouldReduceMotion ? "visible" : "hidden";
 
   return (
-    <section className="relative flex min-h-[60vh] items-end overflow-hidden bg-bg-void pt-[15vh]">
-      <Image src={imageSrc} alt={imageAlt} fill priority className="object-cover" />
+    <section className="relative flex min-h-[75vh] items-end overflow-hidden bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pt-[15vh]">
+      <div className={imageWrapperClassName}>
+        <Image src={imageSrc} alt={imageAlt} fill priority className={imageClassName} />
+      </div>
 
       <div
         className="absolute inset-0"
@@ -33,7 +45,7 @@ export default function PageHero({ eyebrow, title, subtitle, imageSrc, imageAlt 
         initial={initial}
         animate="visible"
         variants={staggerContainer}
-        className="relative z-10 mx-auto w-full max-w-[1280px] px-[clamp(1.5rem,5vw,4rem)] pb-20"
+        className="relative z-10 mx-auto w-full max-w-[1280px] pb-20"
       >
         <motion.div variants={fadeInUp}>
           <Eyebrow>{eyebrow}</Eyebrow>

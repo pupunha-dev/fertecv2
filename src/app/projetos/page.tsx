@@ -18,8 +18,9 @@ export default function CasesPage() {
         subtitle="Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido.
 É essa compreensão que orienta as decisões de engenharia.
 "
-        imageSrc="/images/pages/PROJETOS-CENTRALIZADO-hero.jpeg"
+        imageSrc="/images/hero/HERO-PROJETOS-BANNER.svg"
         imageAlt="Biblioteca técnica de cases de engenharia aplicada"
+        imageClassName="object-cover object-right"
       />
       <CasesListSection />
       <ClosingCTASection

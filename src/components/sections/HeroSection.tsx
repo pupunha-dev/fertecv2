@@ -20,14 +20,16 @@ export default function HeroSection() {
   const initial = shouldReduceMotion ? "visible" : "hidden";
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-bg-void pt-[15vh] pb-16 lg:pb-24">
-      <Image
-        src="/images/pages/HOME-CENTRALIZADO-hero.jpeg"
-        alt="Componente mecânico industrial em processo de reengenharia"
-        fill
-        priority
-        className="object-cover object-center"
-      />
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pt-[15vh] pb-16 lg:pb-24">
+      <div>
+        <Image
+          src="/images/hero/HERO-HOMEPAGE-BANNER.svg"
+          alt="Componente mecânico industrial em processo de reengenharia"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
 
       <div
         className="absolute inset-0"
@@ -41,7 +43,7 @@ export default function HeroSection() {
         initial={initial}
         animate="visible"
         variants={staggerContainer}
-        className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col gap-6 px-[clamp(1.5rem,5vw,4rem)] lg:grid lg:grid-cols-[1fr_auto] lg:items-end lg:gap-12"
+        className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col gap-6 lg:grid lg:grid-cols-[1fr_auto] lg:items-end lg:gap-12"
       >
         <div className="flex max-w-3xl flex-col gap-6">
           <motion.div variants={fadeInUp}>
