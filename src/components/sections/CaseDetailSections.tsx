@@ -20,7 +20,7 @@ const SECTIONS: Array<{
     { label: "DESENVOLVIMENTO", field: "caracterizacaoFalha", imageField: "imagemDesenvolvimento" },
     { label: "EXECUÇÃO", field: "reengenhariaAplicada", imageField: "imagemExecucao" },
     { label: "RESULTADO", field: "solucaoImplementada", imageField: "imagemResultado" },
-    { label: "COMPETÊNCIAS APLICADAS", field: "resultadoOperacional" },
+    { label: "COMPETÊNCIAS APLICADAS", field: "resultadoOperacional", imageField: "imagemCompetenciasAplicadas" },
   ];
 
 export default function CaseDetailSections({ technicalCase }: CaseDetailSectionsProps) {
@@ -42,10 +42,8 @@ export default function CaseDetailSections({ technicalCase }: CaseDetailSections
               variants={fadeInUp}
               className="border-t border-line-rule pt-6 lg:pt-8"
             >
-              <div
-                className={`grid grid-cols-1 gap-6 lg:gap-8 ${imageSrc ? "lg:grid-cols-[1fr_2fr] lg:items-center" : ""}`}
-              >
-                {imageSrc && (
+              <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_2fr] lg:items-center lg:gap-8">
+                {imageSrc ? (
                   <div className="relative aspect-[16/9] w-full overflow-hidden">
                     <Image
                       src={imageSrc}
@@ -55,6 +53,8 @@ export default function CaseDetailSections({ technicalCase }: CaseDetailSections
                       className="object-cover"
                     />
                   </div>
+                ) : (
+                  <div className="hidden lg:block" aria-hidden="true" />
                 )}
 
                 <div className="flex flex-col gap-4">

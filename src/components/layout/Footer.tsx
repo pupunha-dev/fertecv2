@@ -75,17 +75,14 @@ export default function Footer() {
             >
               comercial@fertec.com.br
             </a>
-            <p
-
+            <a
+              href="https://wa.me/554136252745"
+              target="_blank"
+              rel="noreferrer"
               className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary"
             >
-              Telefone / Whatsapp:<a
-                href="https://wa.me/554136252745"
-                className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary pl-2"
-              >
-                (41) 3265-2745
-              </a>
-            </p>
+              Telefone / Whatsapp: (41) 3265-2745
+            </a>
 
             <div className="flex gap-4">
               {SOCIAL_LINKS.map((social) => (

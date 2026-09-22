@@ -5,9 +5,9 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
-export default function PhilosophySection() {
+export default function ConfidentialitySection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
+    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] pb-[clamp(3rem,6vw,5rem)] pt-[clamp(2rem,4vw,3rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -16,23 +16,25 @@ export default function PhilosophySection() {
         className="mx-auto flex max-w-[1280px] flex-col gap-4"
       >
         <motion.div variants={fadeInUp}>
-          {/* <Eyebrow>Experiência Transformada em Conhecimento</Eyebrow> */}
+          <Eyebrow>Confidencialidade</Eyebrow>
         </motion.div>
 
         <motion.div variants={fadeInUp}>
-          <SectionTitle as="h2">Experiência transformada em conhecimento</SectionTitle>
+          <SectionTitle as="h2">
+            A proteção da propriedade intelectual integra nossa atuação
+          </SectionTitle>
         </motion.div>
 
         <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          A integração entre engenharia, ferramentaria e manufatura mantém as
-          decisões técnicas próximas da realidade de fabricação, montagem e
-          operação.
+          Informações técnicas, geometrias, identificações, contextos de aplicação e
+          detalhes visuais apresentados nesta biblioteca podem ter sido omitidos,
+          tratados ou parcialmente recompostos para preservar a confidencialidade dos
+          projetos desenvolvidos para nossos clientes.
         </motion.p>
 
         <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
-          Soluções validadas, dificuldades encontradas e resultados observados
-          ampliam o conhecimento acumulado e servem de referência para novos
-          trabalhos.
+          As imagens têm finalidade técnica e institucional e respeitam os limites de
+          divulgação definidos para cada projeto.
         </motion.p>
       </motion.div>
     </section>

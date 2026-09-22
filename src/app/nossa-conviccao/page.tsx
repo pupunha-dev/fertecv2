@@ -19,8 +19,7 @@ export default function NossaConviccaoPage() {
         eyebrow="Nossa Convicção"
         title="A ENGENHARIA CRIA VALOR QUANDO COMPREENDE A NECESSIDADE ANTES DE DEFINIR A ALTERNATIVA."
         subtitle="Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido. É essa compreensão que orienta as decisões de engenharia."
-        imageSrc="/images/pages/QUEM-SOMOS.png"
-        imageAlt="Ferramentaria técnica da Fertec"
+        showImage={false}
       />
       <AboutIntroSection />
       <OriginStorySection />

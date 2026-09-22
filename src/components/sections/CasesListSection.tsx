@@ -60,7 +60,7 @@ export default function CasesListSection() {
                 </div>
 
                 <span className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-orange">
-                  <p>Clique para ver conteúdo completo</p>
+                  <p>VER PROJETO</p>
                 </span>
               </div>
             </Link>
