@@ -3,7 +3,7 @@ import PageHero from "@/components/sections/PageHero";
 import CapabilitiesAccordionSection from "@/components/sections/CapabilitiesAccordionSection";
 import ClosingCTASection from "@/components/sections/ClosingCTASection";
 import AboutIntroSection from "@/components/sections/AboutIntroSection";
-import AboutIntroSection2 from "@/components/sections/AboutIntroSection2";
+import ProcessIntroContent from "@/components/sections/ProcessIntroContent";
 
 export const metadata: Metadata = {
   title: "Capacidades | Fertec — Engenharia Aplicada",
@@ -22,13 +22,15 @@ export default function CapacidadesPage() {
         imageAlt="Manufatura técnica de precisão como consequência da engenharia"
 
         imageClassName="object-cover object-right"
-      />
-      <AboutIntroSection2 />
+      >
+        <ProcessIntroContent />
+      </PageHero>
       <CapabilitiesAccordionSection />
       <ClosingCTASection
         eyebrow="Avaliação Técnica"
         title="QUANDO UMA NECESSIDADE TÉCNICA COMPROMETE UM ATIVO INDUSTRIAL, O CUSTO NÃO ESTÁ APENAS NO COMPONENTE."
         text="Obsolescência, falhas recorrentes, ausência de documentação, necessidades de inspeção e recuperação de ferramentais podem afetar disponibilidade, qualidade, prazo e continuidade operacional."
+        text2="Apresente sua aplicação à Fertec."
       />
     </>
   );

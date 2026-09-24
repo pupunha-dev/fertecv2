@@ -23,13 +23,13 @@ export default function AboutIntroSection() {
           <SectionTitle as="h2">Decisões técnicas</SectionTitle>
         </motion.div>
 
-        <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
+        <motion.p variants={fadeInUp} className="max-w-full lg:max-w-[80%] font-sans text-base text-text-secondary sm:text-lg">
           Antes da fabricação, decisões sobre materiais, geometria,
           tolerâncias, interfaces e demais características já influenciam o
           comportamento de um componente em serviço.
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
+        <motion.p variants={fadeInUp} className="max-w-full lg:max-w-[80%] font-sans text-base text-text-secondary sm:text-lg">
           Essas definições estão relacionadas entre si e, em conjunto,
           determinam características importantes para o funcionamento da
           aplicação.

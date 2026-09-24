@@ -35,7 +35,7 @@ const EXECUTAR_TAGS = [
 const VALIDAR_TAGS = [
   "Conformidade dimensional",
   "Montagem",
-  "Resultados funcionais",
+  "Requisitos funcionais",
   "Comportamento em operação",
 ];
 
@@ -102,7 +102,7 @@ export default function CapabilitiesAccordionSection() {
                 {item.title}
               </h3>
               {item.subtitle && (
-                <p className="font-sans text-base font-medium leading-relaxed text-text-primary sm:text-lg">
+                <p className="font-sans text-base font-medium leading-relaxed text-text-primary sm:text-lg lg:max-w-5xl">
                   {item.subtitle}
                 </p>
               )}
@@ -110,14 +110,14 @@ export default function CapabilitiesAccordionSection() {
                 (paragraph, index) => (
                   <p
                     key={index}
-                    className="font-sans text-base text-text-secondary sm:text-lg"
+                    className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg lg:max-w-5xl"
                   >
                     {paragraph}
                   </p>
                 )
               )}
               {item.tags && (
-                <p className="font-sans text-sm font-medium uppercase tracking-[0.05em] text-orange sm:text-base">
+                <p className="font-sans text-sm font-medium tracking-[0.05em] text-orange sm:text-base">
                   {item.tags.join(" · ")}
                 </p>
               )}

@@ -7,7 +7,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function FailureCauseSection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
+    <section id="moldes-ferramentais-industriais" className="scroll-mt-24 bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(2rem,4vw,3rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -17,7 +17,7 @@ export default function FailureCauseSection() {
       >
         <motion.div
           variants={fadeInUp}
-          className="relative aspect-[4/5] w-full overflow-hidden bg-bg-surface lg:aspect-auto lg:min-h-[360px]"
+          className="relative aspect-[4/5] w-full overflow-hidden bg-bg-void lg:aspect-auto lg:h-full lg:min-h-[360px]"
         >
           <Image
             src="/images/pages/MOLDES-FERRAMENTAIS.png"
@@ -46,7 +46,11 @@ export default function FailureCauseSection() {
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            Desgaste, danos, obsolescência ou novas exigências de processo não determinam necessariamente sua substituição integral. A Fertec atua na manutenção, recuperação e modernização de moldes e ferramentais, além do desenvolvimento e da reengenharia de componentes críticos.
+            Desgaste, danos, obsolescência ou novas exigências de processo não determinam necessariamente sua substituição integral.
+          </motion.p>
+
+          <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
+            A Fertec atua na manutenção, recuperação e modernização de moldes e ferramentais, além do desenvolvimento e da reengenharia de componentes críticos.
           </motion.p>
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">

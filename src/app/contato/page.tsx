@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactHeroSection from "@/components/sections/ContactHeroSection";
+import ContactIntroSection from "@/components/sections/ContactIntroSection";
 import ContactInfoSection from "@/components/sections/ContactInfoSection";
 import ContactSection from "@/components/sections/ContactSection";
 
@@ -13,6 +14,7 @@ export default function ContatoPage() {
   return (
     <>
       <ContactHeroSection />
+      <ContactIntroSection />
       <ContactInfoSection />
       {/* <ContactSection /> */}
     </>

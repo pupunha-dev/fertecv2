@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { CASES } from "@/data/cases";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
+const UNCROPPED_SLUGS = ["sistema-de-elevacao", "dispositivo-de-conformacao", "came"];
+
 export default function CasesListSection() {
   return (
     <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
@@ -22,13 +24,21 @@ export default function CasesListSection() {
               href={`/projetos/${technicalCase.slug}`}
               className="group flex h-full flex-col border border-border-subtle bg-bg-deep transition-colors duration-200 hover:border-border-active"
             >
-              <div className="relative aspect-[16/9] w-full overflow-hidden">
+              <div
+                className={`relative aspect-[16/9] w-full overflow-hidden ${
+                  UNCROPPED_SLUGS.includes(technicalCase.slug) ? "bg-bg-void" : ""
+                }`}
+              >
                 <Image
                   src={technicalCase.image}
                   alt={technicalCase.titulo}
                   fill
                   loading="lazy"
-                  className="object-cover"
+                  className={
+                    UNCROPPED_SLUGS.includes(technicalCase.slug)
+                      ? "object-contain"
+                      : "object-cover"
+                  }
                 />
                 {technicalCase.emBreve && (
                   <span className="absolute right-4 top-4 rounded-[4px] border border-border-active bg-bg-void/80 px-3 py-1 font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-orange">
@@ -59,7 +69,7 @@ export default function CasesListSection() {
                   </div>
                 </div>
 
-                <span className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-orange">
+                <span className="mt-auto font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-orange">
                   <p>VER PROJETO</p>
                 </span>
               </div>

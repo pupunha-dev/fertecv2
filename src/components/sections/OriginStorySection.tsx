@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function OriginStorySection() {
   return (
-    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
+    <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(1.5rem,3vw,2.5rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -28,16 +28,16 @@ export default function OriginStorySection() {
           <OrangeRule />
         </motion.div>
 
-        <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
+        <motion.p variants={fadeInUp} className="max-w-full lg:max-w-[80%] font-sans text-base text-text-secondary sm:text-lg">
           Todo componente existente traz informações sobre sua aplicação.
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
+        <motion.p variants={fadeInUp} className="max-w-full lg:max-w-[80%] font-sans text-base text-text-secondary sm:text-lg">
           Geometria, materiais, interfaces e sinais de desgaste ajudam a
           compreender como foi concebido e como se comporta em operação.
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-sans text-base text-text-secondary sm:text-lg">
+        <motion.p variants={fadeInUp} className="max-w-full lg:max-w-[80%] font-sans text-base text-text-secondary sm:text-lg">
           Evoluir não significa alterar por princípio. Significa preservar o
           que permanece adequado e concentrar a engenharia nos pontos que
           justificam revisão ou aprimoramento.
@@ -45,7 +45,7 @@ export default function OriginStorySection() {
 
         <motion.p
           variants={fadeInUp}
-          className="font-display text-2xl font-bold uppercase leading-snug text-text-accent sm:text-3xl"
+          className="max-w-full lg:max-w-[80%] font-display text-2xl font-bold uppercase leading-snug text-text-accent sm:text-3xl"
         >
           Toda alteração precisa ter uma razão técnica.
         </motion.p>

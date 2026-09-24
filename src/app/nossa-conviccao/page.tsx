@@ -18,18 +18,27 @@ export default function NossaConviccaoPage() {
       <PageHero
         eyebrow="Nossa Convicção"
         title="A ENGENHARIA CRIA VALOR QUANDO COMPREENDE A NECESSIDADE ANTES DE DEFINIR A ALTERNATIVA."
-        subtitle="Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido. É essa compreensão que orienta as decisões de engenharia."
-        showImage={false}
+        subtitle={[
+          "Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido.",
+          "É essa compreensão que orienta as decisões de engenharia.",
+        ]}
+        imageSrc="/images/hero/HERO-NOSSACONVICCAO-BANNER.svg"
+        imageAlt="Convicção de engenharia aplicada da Fertec"
+        imageClassName="object-cover object-right scale-125"
+        titleMaxWidthClassName="max-w-[720px]"
+        subtitleMaxWidthClassName="max-w-[620px]"
       />
       <AboutIntroSection />
       <OriginStorySection />
       <PhilosophySection />
       <MissionVisionValuesSection />
-      <ClosingCTASection
-        eyebrow="Avaliação Técnica"
-        title="Sua operação enfrenta uma necessidade técnica que exige mais do que fabricação?"
-        text="Apresente sua aplicação à Fertec."
-      />
+      <div className="lg:-mt-16">
+        <ClosingCTASection
+          eyebrow="Avaliação Técnica"
+          title="Sua operação enfrenta uma necessidade técnica que exige mais do que fabricação?"
+          text="Apresente sua aplicação à Fertec."
+        />
+      </div>
     </>
   );
 }

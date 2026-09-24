@@ -18,6 +18,7 @@ export interface TechnicalCase {
   imagemExecucao?: string;
   imagemResultado?: string;
   imagemCompetenciasAplicadas?: string;
+  sectionLabelOverrides?: Partial<Record<string, string>>;
 }
 
 export const CASES: TechnicalCase[] = [
@@ -34,21 +35,21 @@ export const CASES: TechnicalCase[] = [
     problemaOperacional:
       "Além da vida útil reduzida da primeira reconstrução, a reposição permanecia condicionada ao fornecimento original, com custo elevado e longo prazo de atendimento.",
     condicaoAplicacao:
-      "A análise concentrou-se na arquitetura mecânica do redutor e nas relações funcionais entre seus elementos. Engrenamentos, referências geométricas e interfaces mecânicas foram avaliados em conjunto para compreender sua influência sobre o funcionamento do sistema.",
+      "A análise concentrou-se na arquitetura mecânica do redutor e nas relações funcionais entre seus elementos.\n\nEngrenamentos, referências geométricas e interfaces mecânicas foram avaliados em conjunto para compreender sua influência sobre o funcionamento do sistema.",
     caracterizacaoFalha:
       "As informações reconstruídas foram consolidadas em uma referência de engenharia para orientar a nova fabricação e futuras intervenções no conjunto.",
     reengenhariaAplicada:
       "A fabricação seguiu as definições estabelecidas para materiais, geometrias, tolerâncias e características funcionais do conjunto.",
     solucaoImplementada:
-      "A reconstrução restabeleceu as condições de operação do redutor. A documentação resultante criou uma base técnica para futuras fabricações e intervenções, ampliando a autonomia sobre o conjunto.",
+      "A reconstrução restabeleceu as condições de operação do redutor.\n\nA documentação resultante criou uma base técnica para futuras fabricações e intervenções, ampliando a autonomia sobre o conjunto.",
     resultadoOperacional:
       " Reengenharia de Componentes Críticos · Engenharia Reversa · Projeto Mecânico · Manufatura Técnica",
-    imagemDesafio: "/images/pages/redutor-planetario/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/redutor-planetario/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/redutor-planetario/desenvolvimento.png",
-    imagemExecucao: "/images/pages/redutor-planetario/execucao.png",
+    imagemDesafio: "/images/pages/redutor-planetario/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/redutor-planetario/desenvolvimento.png",
+    imagemDesenvolvimento: "/images/pages/redutor-planetario/execucao.png",
+    imagemExecucao: "/images/pages/redutor-planetario/competencias-aplicadas.png",
     imagemResultado: "/images/pages/redutor-planetario/resultado.png",
-    imagemCompetenciasAplicadas: "/images/pages/redutor-planetario/competencias-aplicadas.png",
+    imagemCompetenciasAplicadas: "",
   },
   {
     slug: "pistao-hidraulico",
@@ -63,21 +64,21 @@ export const CASES: TechnicalCase[] = [
     problemaOperacional:
       "A geometria do componente existente, isoladamente, não permitia avaliar sua resposta aos carregamentos presentes na aplicação.",
     condicaoAplicacao:
-      "A análise partiu dos carregamentos atuantes e de sua representação em um modelo estrutural. Por meio do método dos elementos finitos, foi avaliada a distribuição de tensões no componente, permitindo identificar as regiões críticas para a revisão do projeto.",
+      "A análise partiu dos carregamentos atuantes e de sua representação em um modelo estrutural.\n\nPor meio do método dos elementos finitos, foi avaliada a distribuição de tensões no componente, permitindo identificar as regiões críticas para a revisão do projeto.",
     caracterizacaoFalha:
-      "Os resultados orientaram a revisão dos parâmetros de projeto relacionados às regiões críticas. A nova configuração foi então verificada em ambiente virtual quanto à resposta aos carregamentos considerados antes da fabricação.",
+      "Os resultados orientaram a revisão dos parâmetros de projeto relacionados às regiões críticas.\n\nA nova configuração foi então verificada em ambiente virtual quanto à resposta aos carregamentos considerados antes da fabricação.",
     reengenhariaAplicada:
       "A fabricação seguiu as definições de geometria, requisitos dimensionais e demais características técnicas especificadas para o componente.",
     solucaoImplementada:
       "O projeto resultou em uma nova configuração, avaliada estruturalmente antes da fabricação, reduzindo a incerteza técnica associada à reprodução direta do componente existente.",
     resultadoOperacional:
       " Análise Estrutural · Método dos Elementos Finitos · Reengenharia de Componentes Críticos · Projeto Mecânico · Manufatura Técnica",
-    imagemDesafio: "/images/pages/pistao-hidraulico/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/pistao-hidraulico/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/pistao-hidraulico/desenvolvimento.png",
-    imagemExecucao: "/images/pages/pistao-hidraulico/execucao.png",
-    imagemResultado: "/images/pages/pistao-hidraulico/resultado.png",
-    imagemCompetenciasAplicadas: "/images/pages/pistao-hidraulico/competencias-aplicadas.png",
+    imagemDesafio: "/images/pages/pistao-hidraulico/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/pistao-hidraulico/desenvolvimento.png",
+    imagemDesenvolvimento: "/images/pages/pistao-hidraulico/execucao.png",
+    imagemExecucao: "/images/pages/pistao-hidraulico/resultado.png",
+    imagemResultado: "/images/pages/pistao-hidraulico/competencias-aplicadas.png",
+    imagemCompetenciasAplicadas: "",
   },
   {
     slug: "sistema-de-elevacao",
@@ -92,25 +93,28 @@ export const CASES: TechnicalCase[] = [
     problemaOperacional:
       "A substituição dos componentes permitiria recompor o conjunto, mas não esclareceria as condições relacionadas ao desgaste identificado.",
     condicaoAplicacao:
-      "A análise concentrou-se na interação entre fuso e porca, considerando atrito, condições de contato, carregamentos e materiais.Esses fatores foram relacionados ao desgaste observado para orientar a revisão do sistema.",
+      "A análise concentrou-se na interação entre fuso e porca, considerando atrito, condições de contato, carregamentos e materiais.\n\nEsses fatores foram relacionados ao desgaste observado para orientar a revisão do sistema.",
     caracterizacaoFalha:
       "A análise orientou a revisão das condições de contato, dos materiais e da configuração do conjunto.",
     reengenhariaAplicada:
       "Os novos componentes foram fabricados conforme as definições de materiais, geometrias, tolerâncias e acabamento superficial.",
     solucaoImplementada:
-      "O projeto resultou em uma nova configuração para o sistema fuso e porca, definida a partir da análise das condições tribológicas da aplicação",
+      "O projeto resultou em uma nova configuração para o sistema fuso e porca, definida a partir da análise das condições tribológicas da aplicação.",
     resultadoOperacional:
       "Tribologia · Reengenharia de Componentes Críticos · Engenharia de Materiais · Projeto Mecânico · Manufatura Técnica",
-    imagemDesafio: "/images/pages/sistema-elevacao/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/sistema-elevacao/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/sistema-elevacao/desenvolvimento.png",
-    imagemExecucao: "/images/pages/sistema-elevacao/execucao.png",
-    imagemResultado: "/images/pages/sistema-elevacao/resultado.png",
+    imagemDesafio: "/images/pages/sistema-elevacao/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/sistema-elevacao/desenvolvimento.png",
+    imagemDesenvolvimento: "",
+    imagemExecucao: "/images/pages/sistema-elevacao/resultado.png",
+    imagemResultado: "/images/pages/sistema-elevacao/execucao.png",
   },
   {
     slug: "dispositivo-de-conformacao",
     setor: "",
     titulo: "DISPOSITIVO DE CONFORMAÇÃO",
+    sectionLabelOverrides: {
+      DESENVOLVIMENTO: "ENGENHARIA PARA MANUFATURA",
+    },
     resumoProblema:
       "A partir de um projeto mecânico fornecido pelo cliente, a Fertec conduziu a industrialização de um dispositivo de conformação.",
     resumoResultado:
@@ -118,9 +122,9 @@ export const CASES: TechnicalCase[] = [
     image: "/images/pages/dispositivos-conformacao/desafio.png",
     emBreve: false,
     problemaOperacional:
-      "A execução exigia preservar geometrias, tolerâncias e interfaces mecânicas ao longo das diferentes etapas de fabricação.Produzidos individualmente, os componentes precisavam manter compatibilidade dimensional e funcional na montagem.",
+      "A execução exigia preservar geometrias, tolerâncias e interfaces mecânicas ao longo das diferentes etapas de fabricação.\n\nProduzidos individualmente, os componentes precisavam manter compatibilidade dimensional e funcional na montagem.",
     condicaoAplicacao:
-      "A documentação fornecida foi analisada sob a perspectiva da fabricação do conjunto, considerando referências dimensionais, tolerâncias e interfaces mecânicas.A partir dessa análise, foram definidas as estratégias de fabricação, controle dimensional, ajustagem e montagem.",
+      "A documentação fornecida foi analisada sob a perspectiva da fabricação do conjunto, considerando referências dimensionais, tolerâncias e interfaces mecânicas.\n\nA partir dessa análise, foram definidas as estratégias de fabricação, controle dimensional, ajustagem e montagem.",
     caracterizacaoFalha:
       "As definições do projeto foram convertidas em processos e sequências de fabricação, controle, ajustagem e montagem necessários à industrialização do dispositivo.",
     reengenhariaAplicada:
@@ -129,12 +133,12 @@ export const CASES: TechnicalCase[] = [
       "Após a validação funcional da primeira unidade, uma segunda foi produzida a partir da mesma definição de industrialização.",
     resultadoOperacional:
       "Industrialização de Projetos Mecânicos · Engenharia para Manufatura · Controle Dimensional · Ajustagem Mecânica · Manufatura Técnica",
-    imagemDesafio: "/images/pages/dispositivos-conformacao/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/dispositivos-conformacao/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/dispositivos-conformacao/desenvolvimento.png",
-    imagemExecucao: "/images/pages/dispositivos-conformacao/execucao.png",
-    imagemResultado: "/images/pages/dispositivos-conformacao/resultado.png",
-    imagemCompetenciasAplicadas: "/images/pages/dispositivos-conformacao/competencias-aplicadas.png",
+    imagemDesafio: "/images/pages/dispositivos-conformacao/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/dispositivos-conformacao/desenvolvimento.png",
+    imagemDesenvolvimento: "/images/pages/dispositivos-conformacao/execucao.png",
+    imagemExecucao: "/images/pages/dispositivos-conformacao/resultado.png",
+    imagemResultado: "/images/pages/dispositivos-conformacao/competencias-aplicadas.png",
+    imagemCompetenciasAplicadas: "",
   },
   {
     slug: "cilindro-laminador",
@@ -149,21 +153,21 @@ export const CASES: TechnicalCase[] = [
     problemaOperacional:
       "Aplicar a configuração aos demais cilindros exigia preservar as referências dimensionais ao longo dos diferentes processos envolvidos em cada intervenção.",
     condicaoAplicacao:
-      "O levantamento dimensional permitiu reconstruir as referências geométricas do cilindro modelo e elaborar a documentação técnica.Geometrias, interfaces e características construtivas foram documentadas para orientar as alterações nos demais cilindros.",
+      "O levantamento dimensional permitiu reconstruir as referências geométricas do cilindro modelo e elaborar a documentação técnica.\n\nGeometrias, interfaces e características construtivas foram documentadas para orientar as alterações nos demais cilindros.",
     caracterizacaoFalha:
-      "As informações reconstruídas foram convertidas em requisitos técnicos para as intervenções.O planejamento definiu as referências e os controles dimensionais necessários à integração dos diferentes processos de execução.",
+      "As informações reconstruídas foram convertidas em requisitos técnicos para as intervenções.\n\nO planejamento definiu as referências e os controles dimensionais necessários à integração dos diferentes processos de execução.",
     reengenhariaAplicada:
       "As alterações envolveram soldagem por arco submerso, torneamento de grande porte e balanceamento dinâmico, coordenados conforme os requisitos técnicos definidos para cada intervenção.",
     solucaoImplementada:
-      "A configuração reconstruída a partir do cilindro modelo foi aplicada à alteração de três cilindros.O trabalho também consolidou uma referência técnica para futuras intervenções.",
+      "A configuração reconstruída a partir do cilindro modelo foi aplicada à alteração dos três cilindros.\n\nO trabalho também consolidou uma referência técnica para futuras intervenções.",
     resultadoOperacional:
       "Coordenação Técnica de Projetos Industriais · Engenharia Reversa · Adequação de Componentes de Grande Porte · Controle Dimensional · Manufatura Técnica",
-    imagemDesafio: "/images/pages/cilindro-laminador/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/cilindro-laminador/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/cilindro-laminador/desenvolvimento.png",
-    imagemExecucao: "/images/pages/cilindro-laminador/execucao.png",
-    imagemResultado: "/images/pages/cilindro-laminador/resultado.png",
-    imagemCompetenciasAplicadas: "/images/pages/cilindro-laminador/competencias-aplicadas.png",
+    imagemDesafio: "/images/pages/cilindro-laminador/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/cilindro-laminador/desenvolvimento.png",
+    imagemDesenvolvimento: "/images/pages/cilindro-laminador/execucao.png",
+    imagemExecucao: "/images/pages/cilindro-laminador/resultado.png",
+    imagemResultado: "/images/pages/cilindro-laminador/competencias-aplicadas.png",
+    imagemCompetenciasAplicadas: "",
   },
   {
     slug: "molde-de-injecao",
@@ -178,21 +182,21 @@ export const CASES: TechnicalCase[] = [
     problemaOperacional:
       "Os componentes recuperados e os novos elementos de substituição precisavam manter compatibilidade com as referências de montagem e funcionamento do molde.",
     condicaoAplicacao:
-      "A avaliação identificou quais componentes seriam recuperados ou substituídos e as referências necessárias a cada intervenção. Geometrias, interfaces, ajustes e condições de montagem foram analisados para definir o escopo técnico do trabalho.",
+      "A avaliação identificou quais componentes seriam recuperados ou substituídos e as referências necessárias a cada intervenção.\n\nGeometrias, interfaces, ajustes e condições de montagem foram analisados para definir o escopo técnico do trabalho.",
     caracterizacaoFalha:
       "As informações levantadas orientaram as intervenções e a definição dos componentes de substituição.",
     reengenhariaAplicada:
-      "Os componentes de substituição foram fabricados, controlados e ajustados conforme as definições do molde. Os demais elementos receberam as intervenções previstas antes da ajustagem e da montagem final do ferramental.",
+      "Os componentes de substituição foram fabricados, controlados e ajustados conforme as definições do molde.\n\nOs demais elementos receberam as intervenções previstas antes da ajustagem e da montagem final do ferramental.",
     solucaoImplementada:
-      "A intervenção restabeleceu as condições funcionais do molde e permitiu seu retorno ao processo produtivo.A recuperação evitou a substituição integral do ferramental.",
+      "A intervenção restabeleceu as condições funcionais do molde e permitiu seu retorno ao processo produtivo.\n\nA recuperação evitou a substituição integral do ferramental.",
     resultadoOperacional:
       "Recuperação de Ferramentais Industriais · Controle Dimensional · Ajustagem Mecânica · Manufatura Técnica",
-    imagemDesafio: "/images/pages/molde-injecao/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/molde-injecao/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/molde-injecao/desenvolvimento.png",
-    imagemExecucao: "/images/pages/molde-injecao/execucao.png",
+    imagemDesafio: "/images/pages/molde-injecao/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/molde-injecao/desenvolvimento.png",
+    imagemDesenvolvimento: "/images/pages/molde-injecao/execucao.png",
+    imagemExecucao: "/images/pages/molde-injecao/competencias-aplicadas.png",
     imagemResultado: "/images/pages/molde-injecao/resultado.png",
-    imagemCompetenciasAplicadas: "/images/pages/molde-injecao/competencias-aplicadas.png",
+    imagemCompetenciasAplicadas: "",
   },
   {
     slug: "came",
@@ -207,21 +211,21 @@ export const CASES: TechnicalCase[] = [
     problemaOperacional:
       "Os perfis livres e as superfícies de geometria não elementar exigiam uma representação tridimensional capaz de reproduzir características que não poderiam ser definidas apenas por medidas isoladas.",
     condicaoAplicacao:
-      "A digitalização tridimensional forneceu a referência geométrica para a reconstrução do modelo CAD.A comparação entre os dados digitalizados e as superfícies reconstruídas permitiu revisar os perfis funcionais antes da conclusão do modelo.",
+      "A digitalização tridimensional forneceu a referência geométrica para a reconstrução do modelo CAD.\n\nA comparação entre os dados digitalizados e as superfícies reconstruídas permitiu revisar os perfis funcionais antes da conclusão do modelo.",
     caracterizacaoFalha:
-      "A geometria reconstruída foi consolidada em modelo tridimensional e desenho técnico, criando uma referência para fabricação e futuras intervenções.Essa documentação elimina a necessidade de repetir o levantamento geométrico da amostra em novas fabricações.",
+      "A geometria reconstruída foi consolidada em modelo tridimensional e desenho técnico, criando uma referência para fabricação e futuras intervenções.\n\nEssa documentação elimina a necessidade de repetir o levantamento geométrico da amostra em novas fabricações.",
     reengenhariaAplicada:
-      "O novo came foi fabricado a partir do modelo reconstruído, seguindo os perfis e superfícies funcionais definidos durante o desenvolvimento.O controle dimensional verificou a correspondência entre o componente produzido e as referências geométricas do modelo.",
+      "O novo came foi fabricado a partir do modelo reconstruído, seguindo os perfis e superfícies funcionais definidos durante o desenvolvimento.\n\nO controle dimensional verificou a correspondência entre o componente produzido e as referências geométricas do modelo.",
     solucaoImplementada:
       "O trabalho resultou em um novo componente, acompanhado de modelo tridimensional e desenho técnico para orientar futuras fabricações de forma controlada.",
     resultadoOperacional:
       "Engenharia Reversa · Digitalização Tridimensional · Reconstrução Geométrica · Manufatura Técnica",
-    imagemDesafio: "/images/pages/came/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/came/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/came/desenvolvimento.png",
-    imagemExecucao: "/images/pages/came/execucao.png",
-    imagemResultado: "/images/pages/came/resultado.png",
-    imagemCompetenciasAplicadas: "/images/pages/came/competencias-aplicadas.png",
+    imagemDesafio: "/images/pages/came/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/came/desenvolvimento.png",
+    imagemDesenvolvimento: "/images/pages/came/execucao.png",
+    imagemExecucao: "/images/pages/came/resultado.png",
+    imagemResultado: "/images/pages/came/competencias-aplicadas.png",
+    imagemCompetenciasAplicadas: "",
   },
   {
     slug: "dispositivos-de-controle-dimensional",
@@ -236,21 +240,21 @@ export const CASES: TechnicalCase[] = [
     problemaOperacional:
       "A geometria da peça, os apoios, os elementos de localização e fixação e o acesso das ponteiras de medição precisam funcionar em conjunto, sem interferir nas regiões submetidas à inspeção.",
     condicaoAplicacao:
-      "A análise considera o componente, as características a serem inspecionadas e as referências utilizadas em seu posicionamento.A relação entre peça, dispositivo e equipamento de medição é avaliada para definir apoios, localização, fixação e acessos adequados a cada operação de controle.",
+      "A análise considera o componente, as características a serem inspecionadas e as referências utilizadas em seu posicionamento.\n\nA relação entre peça, dispositivo e equipamento de medição é avaliada para definir apoios, localização, fixação e acessos adequados a cada operação de controle.",
     caracterizacaoFalha:
-      "A partir dessa análise, é definida a configuração mecânica do dispositivo, incluindo os elementos de apoio, localização e fixação.O projeto também preserva o acesso às regiões necessárias à inspeção.",
+      "A partir dessa análise, é definida a configuração mecânica do dispositivo, incluindo os elementos de apoio, localização e fixação.\n\nO projeto também preserva o acesso às regiões necessárias à inspeção.",
     reengenhariaAplicada:
-      "Os dispositivos foram fabricados, controlados dimensionalmente e ajustados conforme as definições do projeto.Na montagem, apoios, localizadores e elementos de fixação foram integrados de acordo com as condições previstas para cada aplicação.",
+      "Os dispositivos foram fabricados, controlados dimensionalmente e ajustados conforme as definições do projeto.\n\nNa montagem, apoios, localizadores e elementos de fixação foram integrados de acordo com as condições previstas para cada aplicação.",
     solucaoImplementada:
-      "Os dispositivos permitiram posicionar e fixar diferentes componentes nas condições necessárias aos respectivos processos de inspeção.A mesma abordagem foi aplicada a diferentes geometrias, referências de medição e segmentos industriais.",
+      "Os dispositivos permitiram posicionar e fixar diferentes componentes nas condições necessárias aos respectivos processos de inspeção.\n\nA mesma abordagem foi aplicada a diferentes geometrias, referências de medição e segmentos industriais.",
     resultadoOperacional:
       "Dispositivos para Controle Dimensional · Projeto Mecânico · Posicionamento e Fixação · Controle Dimensional · Manufatura Técnica",
-    imagemDesafio: "/images/pages/dispositivos-controle-dimensional/desafio.png",
-    imagemAnaliseTecnica: "/images/pages/dispositivos-controle-dimensional/analise-tecnica.png",
-    imagemDesenvolvimento: "/images/pages/dispositivos-controle-dimensional/desenvolvimento.png",
-    imagemExecucao: "/images/pages/dispositivos-controle-dimensional/execucao.png",
-    imagemResultado: "/images/pages/dispositivos-controle-dimensional/resultado.png",
-    imagemCompetenciasAplicadas: "/images/pages/dispositivos-controle-dimensional/competencias-aplicadas.png",
+    imagemDesafio: "/images/pages/dispositivos-controle-dimensional/analise-tecnica.png",
+    imagemAnaliseTecnica: "/images/pages/dispositivos-controle-dimensional/desenvolvimento.png",
+    imagemDesenvolvimento: "/images/pages/dispositivos-controle-dimensional/execucao.png",
+    imagemExecucao: "/images/pages/dispositivos-controle-dimensional/resultado.png",
+    imagemResultado: "/images/pages/dispositivos-controle-dimensional/competencias-aplicadas.png",
+    imagemCompetenciasAplicadas: "",
   },
 ];
 

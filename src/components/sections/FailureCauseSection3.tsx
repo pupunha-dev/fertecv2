@@ -7,7 +7,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function FailureCauseSection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
+    <section id="dispositivos-mecanicos-especiais" className="scroll-mt-24 bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(2rem,4vw,3rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -17,7 +17,7 @@ export default function FailureCauseSection() {
       >
         <motion.div
           variants={fadeInUp}
-          className="relative aspect-[4/5] w-full overflow-hidden bg-bg-surface lg:aspect-auto lg:min-h-[360px]"
+          className="relative aspect-[4/5] w-full overflow-hidden bg-bg-void lg:aspect-auto lg:h-full lg:min-h-[360px]"
         >
           <Image
             src="/images/pages/DISPOSITIVOS-MECANICOS.png"

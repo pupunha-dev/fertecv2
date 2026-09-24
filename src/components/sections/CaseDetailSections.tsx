@@ -33,8 +33,22 @@ export default function CaseDetailSections({ technicalCase }: CaseDetailSections
         variants={staggerContainer}
         className="mx-auto flex max-w-5xl flex-col gap-8 lg:gap-12"
       >
+        <motion.div variants={fadeInUp} className="flex flex-col gap-4">
+          {technicalCase.resumoProblema.trim() && (
+            <p className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
+              {technicalCase.resumoProblema}
+            </p>
+          )}
+          {technicalCase.resumoResultado.trim() && (
+            <p className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
+              {technicalCase.resumoResultado}
+            </p>
+          )}
+        </motion.div>
+
         {SECTIONS.map(({ label, field, imageField }) => {
           const imageSrc = imageField ? (technicalCase[imageField] as string | undefined) : undefined;
+          const displayLabel = technicalCase.sectionLabelOverrides?.[label] ?? label;
 
           return (
             <motion.div
@@ -47,7 +61,7 @@ export default function CaseDetailSections({ technicalCase }: CaseDetailSections
                   <div className="relative aspect-[16/9] w-full overflow-hidden">
                     <Image
                       src={imageSrc}
-                      alt={`${technicalCase.titulo} — ${label}`}
+                      alt={`${technicalCase.titulo} — ${displayLabel}`}
                       fill
                       loading="lazy"
                       className="object-cover"
@@ -58,10 +72,15 @@ export default function CaseDetailSections({ technicalCase }: CaseDetailSections
                 )}
 
                 <div className="flex flex-col gap-4">
-                  <Eyebrow>{label}</Eyebrow>
-                  <p className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-                    {technicalCase[field] as string}
-                  </p>
+                  <Eyebrow>{displayLabel}</Eyebrow>
+                  {(technicalCase[field] as string).split("\n\n").map((paragraph, index) => (
+                    <p
+                      key={index}
+                      className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </div>
             </motion.div>

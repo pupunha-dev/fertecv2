@@ -38,10 +38,14 @@ export default function ProcessFlowSection() {
   return (
     <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <div className="mx-auto max-w-[1280px]">
-        <Eyebrow>MÉTODO FERTEC</Eyebrow>
+        <Eyebrow>PROCESSO</Eyebrow>
         <SectionTitle as="h2" className="mt-4 max-w-3xl">
-          PROCESSO
+          MÉTODO FERTEC
         </SectionTitle>
+        <p className="mt-4 max-w-none font-sans text-base text-text-secondary sm:text-lg">
+          Cada projeto parte da necessidade apresentada, das informações
+          disponíveis e dos requisitos da aplicação.
+        </p>
 
         {/* Desktop: horizontal steps with connecting arrows */}
         <motion.div
@@ -121,7 +125,7 @@ export default function ProcessFlowSection() {
           variants={fadeInUp}
           className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-6 lg:mt-8"
         >
-          <Button href="/processos" variant="primary">
+          <Button href="/processo" variant="primary">
             CONHEÇA NOSSO PROCESSO
           </Button>
         </motion.div>

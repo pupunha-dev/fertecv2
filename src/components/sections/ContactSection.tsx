@@ -81,7 +81,7 @@ export default function ContactSection() {
             </a>
           </p>
           <p className="font-sans text-sm text-text-secondary">
-            <span className="text-text-primary">Localização:</span> Curitiba / PR
+            <span className="text-text-primary">Localização:</span> Curitiba · Paraná
           </p>
         </motion.div>
       </motion.div>

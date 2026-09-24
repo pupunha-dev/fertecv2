@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Button from "@/components/ui/Button";
 
@@ -15,8 +16,12 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -78,7 +83,10 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-xs font-medium uppercase tracking-[0.1em] text-text-secondary transition-colors hover:text-text-primary"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={`font-sans text-xs font-medium uppercase tracking-[0.1em] transition-colors hover:text-text-primary ${
+                isActive(link.href) ? "text-text-primary" : "text-text-secondary"
+              }`}
             >
               {link.label}
             </Link>
@@ -150,7 +158,10 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className="font-sans text-sm font-medium uppercase tracking-[0.1em] text-text-secondary transition-colors hover:text-text-primary"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={`font-sans text-sm font-medium uppercase tracking-[0.1em] transition-colors hover:text-text-primary ${
+                isActive(link.href) ? "text-text-primary" : "text-text-secondary"
+              }`}
             >
               {link.label}
             </Link>

@@ -7,7 +7,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function FailureCauseSection() {
   return (
-    <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
+    <section id="obsolescencia-industrial" className="scroll-mt-24 bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(2rem,4vw,3rem)]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -17,7 +17,7 @@ export default function FailureCauseSection() {
       >
         <motion.div
           variants={fadeInUp}
-          className="relative aspect-[4/5] w-full overflow-hidden bg-bg-surface lg:aspect-auto lg:min-h-[360px]"
+          className="relative aspect-[4/5] w-full overflow-hidden bg-bg-void lg:aspect-auto lg:h-full lg:min-h-[360px]"
         >
           <Image
             src="/images/pages/OBSOLESCENCIA-INDUSTRIAL.png"
@@ -50,8 +50,10 @@ export default function FailureCauseSection() {
 
           <motion.p variants={fadeInUp} className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
             Geometria, materiais, propriedades, tolerâncias e requisitos funcionais são definidos de acordo com a necessidade do projeto. Essas informações formam uma base técnica para fabricação, documentação e futuras intervenções.
-            Essa capacidade amplia a autonomia sobre componentes críticos e contribui para manter em operação ativos que continuam relevantes para o processo produtivo.
+          </motion.p>
 
+          <motion.p variants={fadeInUp} className="font-sans text-base font-bold leading-relaxed text-text-secondary sm:text-lg">
+            Essa capacidade amplia a autonomia sobre componentes críticos e contribui para manter em operação ativos que continuam relevantes para o processo produtivo.
           </motion.p>
         </div>
       </motion.div>

@@ -31,6 +31,12 @@ export default function CasesPage() {
         title="APRESENTE SUA APLICAÇÃO À FERTEC"
         text=""
       /> */}
+      <ClosingCTASection
+        eyebrow="Avaliação Técnica"
+        title="QUANDO UMA NECESSIDADE TÉCNICA COMPROMETE UM ATIVO INDUSTRIAL, O CUSTO NÃO ESTÁ APENAS NO COMPONENTE."
+        text="Obsolescência, falhas recorrentes, ausência de documentação, necessidades de inspeção e recuperação de ferramentais podem afetar disponibilidade, qualidade, prazo e continuidade operacional."
+        text2="Apresente sua aplicação à Fertec."
+      />
     </>
   );
 }

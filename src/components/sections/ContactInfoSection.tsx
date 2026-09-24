@@ -43,7 +43,7 @@ const CONTACT_ITEMS = [
   },
   {
     icon: MapPinIcon,
-    label: "Curitiba / PR",
+    label: "Curitiba · Paraná",
     href: undefined,
   },
   {
@@ -53,8 +53,8 @@ const CONTACT_ITEMS = [
   },
   {
     icon: WhatsAppIcon,
-    label: "Tel:(41)3625-2745",
-    href: "https://wa.me/554136252745",
+    label: "Tel: (41) 3265-2745",
+    href: "https://wa.me/5541362652745",
   },
 ];
 

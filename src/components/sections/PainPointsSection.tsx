@@ -54,10 +54,6 @@ export default function PainPointsSection() {
     <section className="bg-bg-deep px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <div className="mx-auto max-w-[1280px]">
         <div className="flex flex-col gap-4 border-b border-border-subtle pb-4 lg:gap-6">
-          <SectionTitle as="h2" className="mt-2 max-w-3xl lg:mt-8">
-            Especialidades
-          </SectionTitle>
-
           <Eyebrow>Ativos Industriais</Eyebrow>
 
           <h3 className="font-display text-xl font-bold uppercase text-text-primary sm:text-2xl">
@@ -81,6 +77,10 @@ export default function PainPointsSection() {
             </p>
           </div>
         </div>
+
+        <SectionTitle as="h2" className="mt-10 max-w-3xl lg:mt-14">
+          Especialidades
+        </SectionTitle>
 
         <motion.div
           initial="hidden"

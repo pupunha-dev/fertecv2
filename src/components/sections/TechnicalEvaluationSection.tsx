@@ -30,7 +30,7 @@ export default function TechnicalEvaluationSection() {
           <Eyebrow>Avaliação Técnica</Eyebrow>
         </motion.div>
 
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp} className="max-w-[80%]">
           <SectionTitle as="h2">
             Quando uma limitação técnica compromete o desempenho do seu
             ativo, a abordagem convencional nem sempre é suficiente.
@@ -39,7 +39,7 @@ export default function TechnicalEvaluationSection() {
 
         <motion.p
           variants={fadeInUp}
-          className="font-sans text-sm font-medium uppercase tracking-[0.05em] text-text-accent sm:text-base"
+          className="max-w-[80%] font-sans text-sm font-medium tracking-[0.05em] text-text-primary sm:text-base"
         >
           {TRIGGERS.join(" · ")}
         </motion.p>
@@ -56,7 +56,7 @@ export default function TechnicalEvaluationSection() {
 
         <motion.div variants={fadeInUp} className="pt-4">
           <Button href="/contato" variant="primary">
-            SOLICITE UMA AVALIAÇÃO TÉCNICA
+            SOLICITAR AVALIAÇÃO TÉCNICA
           </Button>
         </motion.div>
       </motion.div>

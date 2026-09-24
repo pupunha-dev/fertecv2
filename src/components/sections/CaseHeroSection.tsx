@@ -22,7 +22,11 @@ export default function CaseHeroSection({ technicalCase }: CaseHeroSectionProps)
         alt={technicalCase.titulo}
         fill
         priority
-        className="object-cover"
+        className={
+          technicalCase.slug === "dispositivos-de-controle-dimensional"
+            ? "object-contain object-[80%_center]"
+            : "object-contain"
+        }
       />
 
       <div

@@ -9,9 +9,10 @@ interface ClosingCTASectionProps {
   eyebrow: string;
   title: string;
   text: string;
+  text2?: string;
 }
 
-export default function ClosingCTASection({ eyebrow, title, text }: ClosingCTASectionProps) {
+export default function ClosingCTASection({ eyebrow, title, text, text2 }: ClosingCTASectionProps) {
   return (
     <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <motion.div
@@ -37,6 +38,15 @@ export default function ClosingCTASection({ eyebrow, title, text }: ClosingCTASe
         >
           {text}
         </motion.p>
+
+        {text2 && (
+          <motion.p
+            variants={fadeInUp}
+            className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg"
+          >
+            {text2}
+          </motion.p>
+        )}
 
         {/* Solicitar avaliação técnica block  */}
         <motion.div variants={fadeInUp}>
