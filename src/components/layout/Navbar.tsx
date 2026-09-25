@@ -39,9 +39,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${isScrolled
-        ? "border-b border-border-subtle bg-bg-deep/80 backdrop-blur-md"
-        : "bg-transparent"
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${isMenuOpen
+        ? "border-b border-border-subtle bg-bg-deep"
+        : isScrolled
+          ? "border-b border-border-subtle bg-bg-deep/80 backdrop-blur-md"
+          : "bg-transparent"
         }`}
     >
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-[clamp(1.5rem,5vw,4rem)] py-5">
