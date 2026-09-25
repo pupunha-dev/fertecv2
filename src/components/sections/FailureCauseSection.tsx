@@ -13,7 +13,7 @@ export default function FailureCauseSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
-        className="mx-auto grid max-w-[1280px] grid-cols-1 items-stretch gap-8 lg:grid-cols-[2fr_3fr] lg:gap-12"
+        className="mx-auto grid max-w-[1280px] grid-cols-1 items-stretch gap-4 lg:grid-cols-[2fr_3fr] lg:gap-12"
       >
         <motion.div
           variants={fadeInUp}

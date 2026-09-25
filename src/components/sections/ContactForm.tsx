@@ -193,7 +193,7 @@ export default function ContactForm() {
         </p>
       )}
 
-      <Button type="submit" variant="primary" disabled={status === "submitting"} className="mt-2 normal-case">
+      <Button type="submit" variant="primary" disabled={status === "submitting"} className="mt-2 w-full normal-case sm:w-auto">
         {status === "submitting" ? "Enviando..." : "Solicitar Avaliação Técnica"}
       </Button>
     </form>

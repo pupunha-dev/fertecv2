@@ -49,8 +49,8 @@ export default function ClosingCTASection({ eyebrow, title, text, text2 }: Closi
         )}
 
         {/* Solicitar avaliação técnica block  */}
-        <motion.div variants={fadeInUp}>
-          <Button href="/contato" variant="primary" className="normal-case" >
+        <motion.div variants={fadeInUp} className="w-full sm:w-auto">
+          <Button href="/contato" variant="primary" className="w-full normal-case sm:w-auto" >
             <span className="capitalize text-[14px]">Solicitar Avaliação Técnica</span>
           </Button>
         </motion.div>
