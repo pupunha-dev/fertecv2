@@ -56,9 +56,10 @@ export default function PainPointsSection() {
         <div className="flex flex-col gap-4 border-b border-border-subtle pb-4 lg:gap-6">
           <Eyebrow>Ativos Industriais</Eyebrow>
 
-          <h3 className="font-display text-xl font-bold uppercase text-text-primary sm:text-2xl">
+
+          <SectionTitle as="h2" className="max-w-3xl">
             Preservar a capacidade produtiva de ativos estratégicos.
-          </h3>
+          </SectionTitle>
 
           <OrangeRule />
 
@@ -107,7 +108,7 @@ export default function PainPointsSection() {
         </motion.div>
         <motion.div
           variants={fadeInUp}
-          className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center mt-6 ml-6 lg:mt-8"
+          className="flex flex-col items-center gap-4 pt-2 sm:flex-row sm:items-center sm:justify-start mt-6 sm:ml-6 lg:mt-8"
         >
           <Button href="/especialidades" variant="primary">
             CONHEÇA NOSSAS ESPECIALIDADES
