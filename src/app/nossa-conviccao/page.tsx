@@ -23,6 +23,7 @@ export default function NossaConviccaoPage() {
           "É essa compreensão que orienta as decisões de engenharia.",
         ]}
         imageSrc="/images/hero/HERO-NOSSACONVICCAO-BANNER.svg"
+        logoSrc="/logo/fertec-logo-oficial.png"
         imageAlt="Convicção de engenharia aplicada da Fertec"
         imageClassName="object-cover object-right scale-125"
         titleMaxWidthClassName="max-w-[720px]"
