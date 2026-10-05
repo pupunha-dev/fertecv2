@@ -47,8 +47,9 @@ export const CASES: TechnicalCase[] = [
     imagemDesafio: "/images/pages/redutor-planetario/analise-tecnica.png",
     imagemAnaliseTecnica: "/images/pages/redutor-planetario/desenvolvimento.png",
     imagemDesenvolvimento: "/images/pages/redutor-planetario/execucao.png",
-    imagemExecucao: "/images/pages/redutor-planetario/competencias-aplicadas.png",
-    imagemResultado: "/images/pages/redutor-planetario/resultado.png",
+    // imagemExecucao: "/images/pages/redutor-planetario/competencias-aplicadas.png",
+    imagemExecucao: "/images/pages/redutor-planetario/resultado.png",
+    imagemResultado: "/images/pages/redutor-planetario/resultado-webp.webp",
     imagemCompetenciasAplicadas: "",
   },
   {
