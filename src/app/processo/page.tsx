@@ -6,7 +6,7 @@ import AboutIntroSection from "@/components/sections/AboutIntroSection";
 import ProcessIntroContent from "@/components/sections/ProcessIntroContent";
 
 export const metadata: Metadata = {
-  title: "Capacidades | Fertec — Engenharia Aplicada",
+  title: "Processo | Fertec — Engenharia Aplicada",
   description:
     "Capacidades técnicas da Fertec em reengenharia de componentes críticos, soluções para obsolescência industrial, dispositivos mecânicos especiais e manufatura de precisão.",
 };

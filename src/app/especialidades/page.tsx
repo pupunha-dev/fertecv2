@@ -9,7 +9,7 @@ import FailureCauseSection4 from "@/components/sections/FailureCauseSection4";
 import FailureCauseSection5 from "@/components/sections/FailureCauseSection5";
 
 export const metadata: Metadata = {
-  title: "Engenharia Aplicada | Fertec — Engenharia Aplicada",
+  title: "Especialidades | Fertec — Engenharia Aplicada",
   description:
     "Conheça a metodologia de engenharia aplicada da Fertec para caracterizar a causa raiz de falhas recorrentes e reengenheirar componentes industriais críticos.",
 };

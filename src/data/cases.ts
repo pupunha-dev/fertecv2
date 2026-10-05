@@ -104,8 +104,8 @@ export const CASES: TechnicalCase[] = [
       "Tribologia · Reengenharia de Componentes Críticos · Engenharia de Materiais · Projeto Mecânico · Manufatura Técnica",
     imagemDesafio: "/images/pages/sistema-elevacao/analise-tecnica.png",
     imagemAnaliseTecnica: "/images/pages/sistema-elevacao/desenvolvimento.png",
-    imagemDesenvolvimento: "",
-    imagemExecucao: "/images/pages/sistema-elevacao/resultado.png",
+    imagemDesenvolvimento: "/images/pages/sistema-elevacao/desen.jpeg",
+    imagemExecucao: "/images/pages/sistema-elevacao/exec.jpeg",
     imagemResultado: "/images/pages/sistema-elevacao/execucao.png",
   },
   {

@@ -5,7 +5,7 @@ import ConfidentialitySection from "@/components/sections/ConfidentialitySection
 import ClosingCTASection from "@/components/sections/ClosingCTASection";
 
 export const metadata: Metadata = {
-  title: "Cases Técnicos | Fertec — Engenharia Aplicada",
+  title: "Projetos | Fertec — Engenharia Aplicada",
   description:
     "Biblioteca técnica de casos de reengenharia aplicada da Fertec — falhas recorrentes, condições de aplicação, caracterização e resultado operacional.",
 };

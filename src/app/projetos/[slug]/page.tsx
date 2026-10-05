@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: CasePageProps): Promise<Metad
 
   if (!technicalCase) {
     return {
-      title: "Case Técnico | Fertec — Engenharia Aplicada",
+      title: "Projeto | Fertec — Engenharia Aplicada",
     };
   }
 

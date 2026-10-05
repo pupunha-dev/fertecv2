@@ -56,15 +56,6 @@ export default function PageHero({
         />
       )}
 
-      <div
-        className="absolute inset-0"
-        style={{
-          background: showImage
-            ? "linear-gradient(135deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.6) 50%, rgba(232,96,10,0.08) 100%)"
-            : "linear-gradient(135deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.15) 50%, rgba(232,96,10,0.06) 100%)",
-        }}
-      />
-
       <motion.div
         initial={initial}
         animate="visible"

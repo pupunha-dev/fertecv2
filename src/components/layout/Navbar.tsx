@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-[clamp(1.5rem,5vw,4rem)] py-5">
         <Link href="/" className="relative flex items-center gap-3">
           <Image
-            src="/logo/logo-oficial.png"
+            src="/logo/fertec-logo-oficial.png"
             alt="Fertec"
             width={140}
             height={36}
@@ -58,7 +58,7 @@ export default function Navbar() {
             className={isScrolled ? "opacity-0" : "opacity-100"}
           />
           <Image
-            src="/logo/logo-oficial.png"
+            src="/logo/fertec-logo-oficial.png"
             alt=""
             aria-hidden
             width={140}
@@ -134,7 +134,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo/logo-oficial.png"
+              src="/logo/fertec-logo-oficial.png"
               alt="Fertec"
               width={120}
               height={32}
