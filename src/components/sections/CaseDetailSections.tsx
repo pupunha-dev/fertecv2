@@ -23,7 +23,11 @@ const SECTIONS: Array<{
     { label: "COMPETÊNCIAS APLICADAS", field: "resultadoOperacional", imageField: "imagemCompetenciasAplicadas" },
   ];
 
+const LARGER_IMAGE_SLUGS = ["redutor-planetario"];
+
 export default function CaseDetailSections({ technicalCase }: CaseDetailSectionsProps) {
+  const useLargerImages = LARGER_IMAGE_SLUGS.includes(technicalCase.slug);
+
   return (
     <section className="bg-bg-void px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)]">
       <motion.div
@@ -56,14 +60,24 @@ export default function CaseDetailSections({ technicalCase }: CaseDetailSections
               variants={fadeInUp}
               className="border-t border-line-rule pt-6 lg:pt-8"
             >
-              <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_2fr] lg:items-center lg:gap-8">
+              <div
+                className={`grid grid-cols-1 gap-6 lg:items-center lg:gap-8 ${
+                  useLargerImages ? "lg:grid-cols-[1.4fr_1.6fr]" : "lg:grid-cols-[1fr_2fr]"
+                }`}
+              >
                 {imageSrc ? (
-                  <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <div className="relative aspect-[14/9] w-full overflow-hidden">
                     <Image
                       src={imageSrc}
                       alt={`${technicalCase.titulo} — ${displayLabel}`}
                       fill
                       loading="lazy"
+                      quality={useLargerImages ? 100 : undefined}
+                      sizes={
+                        useLargerImages
+                          ? "(max-width: 1023px) 100vw, 45vw"
+                          : "(max-width: 1023px) 100vw, 33vw"
+                      }
                       className="object-cover"
                     />
                   </div>

@@ -34,6 +34,8 @@ export default function CasesListSection() {
                   alt={technicalCase.titulo}
                   fill
                   loading="lazy"
+                  quality={100}
+                  sizes="(max-width: 639px) 100vw, (max-width: 1280px) 50vw, 640px"
                   className={
                     UNCROPPED_SLUGS.includes(technicalCase.slug)
                       ? "object-contain"
