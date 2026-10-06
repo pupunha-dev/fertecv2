@@ -81,21 +81,37 @@ export default function Footer() {
             <h3 className="font-label text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-text-secondary">
               Contato
             </h3>
-            <a
-              href="mailto:comercial@fertec.com.br"
-              className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary"
-            >
-              comercial@fertec.com.br
-            </a>
-            <a
-              href="https://wa.me/554132652745"
-              target="_blank"
-              rel="noreferrer"
-              className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary"
-            >
-              Telefone / Whatsapp: (41) 3265-2745
-            </a>
+            <div className="flex flex-col gap-1">
+              <span className="font-label text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.15em] text-text-primary">
+                E-mail
+              </span>
+              <a
+                href="mailto:comercial@fertec.com.br"
+                className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary"
+              >
+                comercial@fertec.com.br
+              </a>
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="font-label text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.15em] text-text-primary">
+                Telefone / Whatsapp
+              </span>
+              <a
+                href="https://wa.me/554132652745"
+                target="_blank"
+                rel="noreferrer"
+                className="font-sans text-sm text-text-secondary transition-colors hover:text-text-primary"
+              >
+                (41) 3265-2745
+              </a>
+            </div>
 
+            <div className="flex flex-col gap-1">
+              <span className="font-label text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.15em] text-text-primary">
+                Localidade
+              </span>
+              <p className="font-sans text-sm text-text-secondary">Curitiba · Paraná</p>
+            </div>
             <div className="flex gap-4">
               {SOCIAL_LINKS.map((social) => (
                 <a
@@ -109,7 +125,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <p className="font-sans text-sm text-text-secondary">Curitiba · Paraná</p>
           </div>
         </div>
 

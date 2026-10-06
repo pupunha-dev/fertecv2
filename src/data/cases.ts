@@ -76,7 +76,7 @@ export const CASES: TechnicalCase[] = [
     imagemDesafio: "/images/pages/pistao-hidraulico/analise-tecnica.png",
     imagemAnaliseTecnica: "/images/pages/pistao-hidraulico/desenvolvimento.png",
     imagemDesenvolvimento: "/images/pages/pistao-hidraulico/execucao.png",
-    imagemExecucao: "/images/pages/pistao-hidraulico/resultado.png",
+    imagemExecucao: "/images/pages/pistao-hidraulico/TESTE-RESULTADO.jpg",
     imagemResultado: "/images/pages/pistao-hidraulico/competencias-aplicadas.png",
     imagemCompetenciasAplicadas: "",
   },

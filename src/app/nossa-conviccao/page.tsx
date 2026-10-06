@@ -22,10 +22,7 @@ export default function NossaConviccaoPage() {
           "Uma decisão técnica consistente começa pela compreensão dos fatores que influenciam a aplicação e pela identificação do que deve ser preservado, revisto ou desenvolvido.",
           "É essa compreensão que orienta as decisões de engenharia.",
         ]}
-        imageSrc="/images/hero/HERO-NOSSACONVICCAO-BANNER.svg"
         logoSrc="/logo/fertec-logo-oficial.png"
-        imageAlt="Convicção de engenharia aplicada da Fertec"
-        imageClassName="object-cover object-right scale-125"
         titleMaxWidthClassName="max-w-[720px]"
         subtitleMaxWidthClassName="max-w-[620px]"
       />

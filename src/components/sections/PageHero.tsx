@@ -46,15 +46,7 @@ export default function PageHero({
         <div className={imageWrapperClassName}>
           <Image src={imageSrc} alt={imageAlt ?? ""} fill priority className={imageClassName} />
         </div>
-      ) : (
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 55%, #222222 100%)",
-          }}
-        />
-      )}
+      ) : null}
 
       <motion.div
         initial={initial}
@@ -65,7 +57,7 @@ export default function PageHero({
         <div
           className={
             logoSrc
-              ? "grid grid-cols-[1fr_auto] items-start gap-x-4 lg:grid-cols-[minmax(0,720px)_auto] lg:justify-start lg:gap-x-16"
+              ? "grid grid-cols-[1fr_auto] items-start gap-x-4 lg:grid-cols-[minmax(0,720px)_1fr] lg:gap-x-16"
               : undefined
           }
         >
@@ -108,16 +100,22 @@ export default function PageHero({
           {logoSrc && (
             <motion.div
               variants={fadeInUp}
-              className="relative col-start-2 row-start-2 mt-4 aspect-square w-14 shrink-0 self-start sm:w-24 lg:h-full lg:w-auto lg:self-stretch"
+              className="col-start-2 row-start-2 mt-4 flex shrink-0 flex-col items-center gap-1.5 self-start lg:h-full lg:pt-6 lg:origin-center lg:scale-[1.25] lg:gap-4 lg:justify-self-center lg:self-stretch"
             >
-              <Image
-                src={logoSrc}
-                alt="Fertec — logo oficial"
-                fill
-                priority
-                sizes="(min-width: 1024px) 200px, 96px"
-                className="object-contain"
-              />
+              <div className="relative aspect-square w-14 sm:w-24 lg:min-h-0 lg:w-auto lg:flex-1">
+                <Image
+                  src={logoSrc}
+                  alt="Fertec — logo oficial"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 200px, 96px"
+                  className="object-contain"
+                  style={{ filter: "brightness(0) invert(1)" }}
+                />
+              </div>
+              <span className="font-display text-xs font-extrabold uppercase leading-none tracking-wide text-text-primary sm:text-base lg:text-5xl">
+                FERTEC
+              </span>
             </motion.div>
           )}
         </div>

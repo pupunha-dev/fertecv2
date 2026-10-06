@@ -16,18 +16,18 @@ export default function CaseHeroSection({ technicalCase }: CaseHeroSectionProps)
   const initial = shouldReduceMotion ? "visible" : "hidden";
 
   return (
-    <section className="relative flex min-h-[60vh] items-end overflow-hidden bg-bg-void pt-[15vh]">
-      <Image
-        src={technicalCase.image}
-        alt={technicalCase.titulo}
-        fill
-        priority
-        className={
-          technicalCase.slug === "dispositivos-de-controle-dimensional"
-            ? "object-contain object-[80%_center]"
-            : "object-contain"
-        }
-      />
+    <section className="relative flex min-h-[60vh] items-end overflow-hidden bg-bg-void pt-[max(15vh,7rem)]">
+      <div className="absolute bottom-0 right-0 top-24 w-full pr-[clamp(1.5rem,5vw,4rem)] lg:w-[60%]">
+        <div className="relative h-full w-full">
+          <Image
+            src={technicalCase.image}
+            alt={technicalCase.titulo}
+            fill
+            priority
+            className="object-contain object-right"
+          />
+        </div>
+      </div>
 
       <motion.div
         initial={initial}

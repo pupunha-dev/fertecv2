@@ -20,7 +20,7 @@ export default function FailureCauseSection() {
           className="relative aspect-[4/5] w-full overflow-hidden bg-bg-void lg:aspect-auto lg:h-full lg:min-h-[360px]"
         >
           <Image
-            src="/images/pages/DISPOSITIVOS-MECANICOS.png"
+            src="/images/pages/DISPOSITIVOS-MECANICOS.jpeg"
             alt="Dispositivos mecânicos especiais"
             fill
             loading="lazy"
