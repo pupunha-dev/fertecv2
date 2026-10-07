@@ -74,7 +74,8 @@ export const CASES: TechnicalCase[] = [
     resultadoOperacional:
       " Análise Estrutural · Método dos Elementos Finitos · Reengenharia de Componentes Críticos · Projeto Mecânico · Manufatura Técnica",
     imagemDesafio: "/images/pages/pistao-hidraulico/analise-tecnica.png",
-    imagemAnaliseTecnica: "/images/pages/pistao-hidraulico/desenvolvimento.png",
+    // imagemAnaliseTecnica: "/images/pages/pistao-hidraulico/desenvolvimento.png",
+    imagemAnaliseTecnica: "/images/pages/pistao-hidraulico/img-teste.jpeg",
     imagemDesenvolvimento: "/images/pages/pistao-hidraulico/execucao.png",
     imagemExecucao: "/images/pages/pistao-hidraulico/TESTE-RESULTADO.jpg",
     imagemResultado: "/images/pages/pistao-hidraulico/competencias-aplicadas.png",

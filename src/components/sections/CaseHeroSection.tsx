@@ -17,15 +17,17 @@ export default function CaseHeroSection({ technicalCase }: CaseHeroSectionProps)
 
   return (
     <section className="relative flex min-h-[60vh] items-end overflow-hidden bg-bg-void pt-[max(15vh,7rem)]">
-      <div className="absolute bottom-0 right-0 top-24 w-full pr-[clamp(1.5rem,5vw,4rem)] lg:w-[60%]">
-        <div className="relative h-full w-full">
-          <Image
-            src={technicalCase.image}
-            alt={technicalCase.titulo}
-            fill
-            priority
-            className="object-contain object-right"
-          />
+      <div className="absolute inset-x-0 bottom-0 top-24 px-[clamp(1.5rem,5vw,4rem)]">
+        <div className="mx-auto flex h-full max-w-5xl justify-end">
+          <div className="relative h-full w-full lg:w-3/5">
+            <Image
+              src={technicalCase.image}
+              alt={technicalCase.titulo}
+              fill
+              priority
+              className="object-contain object-right"
+            />
+          </div>
         </div>
       </div>
 
