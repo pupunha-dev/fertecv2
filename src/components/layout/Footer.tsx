@@ -108,7 +108,7 @@ export default function Footer() {
 
             <div className="flex flex-col gap-1">
               <span className="font-label text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.15em] text-text-primary">
-                Localidade
+                Localização
               </span>
               <p className="font-sans text-sm text-text-secondary">Curitiba · Paraná</p>
             </div>
