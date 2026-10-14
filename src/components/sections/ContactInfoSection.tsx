@@ -53,7 +53,7 @@ const CONTACT_ITEMS = [
   },
   {
     icon: WhatsAppIcon,
-    label: "Tel: (41) 3265-2745",
+    label: "(41) 3265-2745",
     href: "https://wa.me/5541362652745",
   },
 ];

@@ -23,6 +23,7 @@ export default function CasesPage() {
         imageSrc="/images/hero/HERO-PROJETOS-BANNER.svg"
         imageAlt="Biblioteca técnica de cases de engenharia aplicada"
         imageClassName="object-cover object-right"
+        alignTop
       />
       <CasesListSection />
       <ConfidentialitySection />

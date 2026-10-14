@@ -5,12 +5,12 @@ import ContactInfoSection from "@/components/sections/ContactInfoSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Contato | Fertec — Engenharia Aplicada",
+  title: "Avaliação Técnica | Fertec — Engenharia Aplicada",
   description:
     "Solicite uma avaliação técnica da Fertec para falhas recorrentes, obsolescência industrial ou componentes críticos da sua operação.",
 };
 
-export default function ContatoPage() {
+export default function AvaliacaoTecnicaPage() {
   return (
     <>
       <ContactHeroSection />

@@ -17,6 +17,8 @@ interface PageHeroProps {
   imageWrapperClassName?: string;
   imageClassName?: string;
   showImage?: boolean;
+  darkenLeft?: boolean;
+  alignTop?: boolean;
   titleMaxWidthClassName?: string;
   subtitleMaxWidthClassName?: string;
   children?: ReactNode;
@@ -33,7 +35,9 @@ export default function PageHero({
   imageWrapperClassName = "absolute inset-0",
   imageClassName = "object-cover",
   showImage = true,
-  titleMaxWidthClassName = "max-w-3xl",
+  darkenLeft = false,
+  alignTop = false,
+  titleMaxWidthClassName ="max-w-3xl",
   subtitleMaxWidthClassName = "max-w-2xl",
   children,
 }: PageHeroProps) {
@@ -41,12 +45,19 @@ export default function PageHero({
   const initial = shouldReduceMotion ? "visible" : "hidden";
 
   return (
-    <section className="relative flex min-h-[75vh] items-end overflow-hidden bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pt-[15vh]">
+    <section className={`relative flex min-h-[75vh] ${alignTop ? "items-start" : "items-end"} overflow-hidden bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pt-[15vh]`}>
       {showImage && imageSrc ? (
         <div className={imageWrapperClassName}>
           <Image src={imageSrc} alt={imageAlt ?? ""} fill priority className={imageClassName} />
         </div>
       ) : null}
+
+      {darkenLeft && (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-linear-to-r from-bg-void/70 via-bg-void/40 via-45% to-transparent to-80%"
+        />
+      )}
 
       <motion.div
         initial={initial}

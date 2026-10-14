@@ -55,7 +55,7 @@ export default function TechnicalEvaluationSection() {
         </motion.p>
 
         <motion.div variants={fadeInUp} className="flex flex-col items-stretch pt-4 sm:items-start">
-          <Button href="/contato" variant="primary" className="w-full sm:w-auto">
+          <Button href="/avaliacao-tecnica" variant="primary" className="w-full sm:w-auto">
             SOLICITAR AVALIAÇÃO TÉCNICA
           </Button>
         </motion.div>

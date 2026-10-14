@@ -20,8 +20,8 @@ export default function HeroSection() {
   const initial = shouldReduceMotion ? "visible" : "hidden";
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pt-[15vh] pb-16 lg:pb-24">
-      <div>
+    <section className="relative flex items-center overflow-hidden bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pt-24 pb-16 md:min-h-screen md:pt-[15vh] lg:pb-24">
+      <div className="hidden md:block">
         <Image
           src="/images/hero/HERO-HOMEPAGE-BANNER.svg"
           alt="Componente mecânico industrial em processo de reengenharia"
@@ -73,7 +73,7 @@ export default function HeroSection() {
             variants={fadeInUp}
             className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center"
           >
-            <Button href="/contato" variant="primary" className="normal-case">
+            <Button href="/avaliacao-tecnica" variant="primary" className="normal-case">
               Solicitar Avaliação Técnica
             </Button>
             {/* <Button href="/quem-somos" variant="ghost">

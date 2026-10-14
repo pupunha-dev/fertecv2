@@ -20,8 +20,8 @@ export default function CapacidadesPage() {
         subtitle=""
         imageSrc="/images/hero/HERO-PROCESSO-BANNER.svg"
         imageAlt="Manufatura técnica de precisão como consequência da engenharia"
-
         imageClassName="object-cover object-right"
+        darkenLeft
       >
         <ProcessIntroContent />
       </PageHero>

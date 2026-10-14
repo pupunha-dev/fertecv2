@@ -102,7 +102,7 @@ export default function CapabilitiesAccordionSection() {
                 {item.title}
               </h3>
               {item.subtitle && (
-                <p className="font-sans text-base font-medium leading-relaxed text-text-primary sm:text-lg lg:max-w-5xl">
+                <p className="font-sans text-base font-medium leading-relaxed text-text-primary sm:text-lg lg:max-w-4xl">
                   {item.subtitle}
                 </p>
               )}
@@ -110,7 +110,7 @@ export default function CapabilitiesAccordionSection() {
                 (paragraph, index) => (
                   <p
                     key={index}
-                    className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg lg:max-w-5xl"
+                    className="font-sans text-base leading-relaxed text-text-secondary sm:text-lg lg:max-w-4xl"
                   >
                     {paragraph}
                   </p>

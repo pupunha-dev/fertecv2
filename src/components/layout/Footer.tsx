@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { href: "/processo", label: "Processo" },
   { href: "/nossa-conviccao", label: "Nossa Convicção" },
   { href: "/projetos", label: "Projetos" },
-  // { href: "/contato", label: "Contato" },
+  // { href: "/avaliacao-tecnica", label: "Contato" },
 ];
 
 const SPECIALTY_LINKS = [
@@ -129,7 +129,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-16 font-sans text-xs text-text-muted">
-          © {new Date().getFullYear()} Fertec - FERTEC Ferramentaria Técnica Ltda · Todos os
+          © {new Date().getFullYear()} FERTEC Ferramentaria Técnica Ltda · Todos os
           direitos reservados.
         </p>
       </div>

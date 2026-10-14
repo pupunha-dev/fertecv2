@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { href: "/processo", label: "Processo" },
   { href: "/nossa-conviccao", label: "Nossa Convicção" },
   { href: "/projetos", label: "Projetos" },
-  // { href: "/contato", label: "Contato" },
+  // { href: "/avaliacao-tecnica", label: "Contato" },
 ];
 
 export default function Navbar() {
@@ -97,7 +97,7 @@ export default function Navbar() {
 
         <div className="hidden lg:block">
           <Button
-            href="/contato"
+            href="/avaliacao-tecnica"
             variant="primary"
             className="normal-case border-orange bg-transparent text-orange hover:bg-orange hover:text-bg-void"
           >
