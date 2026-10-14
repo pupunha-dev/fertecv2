@@ -14,7 +14,7 @@ export default function OriginStorySection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
-        className="mx-auto flex max-w-[1280px] flex-col gap-4"
+        className="mx-auto flex max-w-[1280px] flex-col gap-4 bg-bg-surface p-6"
       >
         <motion.div variants={fadeInUp}>
           {/* <Eyebrow>Evolução Técnica</Eyebrow> */}
