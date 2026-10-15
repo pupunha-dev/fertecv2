@@ -23,7 +23,8 @@ export default function HeroSection() {
     <section className="relative flex items-center overflow-hidden bg-bg-void px-[clamp(1.5rem,5vw,4rem)] pt-24 pb-16 md:min-h-screen md:pt-[15vh] lg:pb-24">
       <div className="hidden md:block">
         <Image
-          src="/images/hero/HERO-HOMEPAGE-BANNER.svg"
+          // src="/images/hero/HERO-HOMEPAGE-BANNER.svg"
+          src="/images/hero/h2-teste.png"
           alt="Componente mecânico industrial em processo de reengenharia"
           fill
           priority
